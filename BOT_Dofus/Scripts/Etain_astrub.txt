@@ -1,0 +1,41 @@
+Etain astrub
+
+Action
+Zaap Cite d Astrub
+Go to 1, -17
+Rentre Caverne
+Go to 2
+Check ressource
+Sortie Caverne
+Zaap Cite d Astrub
+Go to 8, -19
+Go to 9, -19
+Check ressource
+Go to 10, -19
+Check ressource
+fin Action
+
+Zaap
+Cite d Astrub
+Village des Eleveurs
+fin Zaap
+
+Ressource
+map 9, -19
+ressource position, 383, 285, couleur, 134, 133, 101
+ressource position, 776, 384, couleur, 105, 103, 89
+ressource position, 808, 369, couleur, 105, 104, 90
+map 10, -19
+ressource position, 616, 292, couleur, 61, 93, 36
+fin Ressource
+
+Caverne
+New 1, -17
+position, 722, 411, 63, 48, couleur, 157, 94, 45, position, 814, 295
+position, 931, 157, 55, 26, couleur, 38, 37, 19, position, 713, 180
+position, 274, 690, 148, 8, couleur, 36, 36, 18, position, 709, 136
+ressource position, 886, 193, couleur, 16, 26, 13
+ressource position, 349, 303, couleur, 59, 46, 25
+fin Caverne
+
+final

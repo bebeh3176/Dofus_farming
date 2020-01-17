@@ -1,0 +1,55 @@
+Poisson astrub
+
+Action
+Zaap Cite d Astrub
+Go to 1, -17
+Rentre Caverne
+Go to 1
+Check ressource
+Go to 2
+Check ressource
+Sortie Caverne
+Zaap Cite d Astrub
+Go to 8, -19
+Go to 9, -19
+Check ressource
+Go to 10, -19
+Check ressource
+fin Action
+
+Zaap
+Cite d Astrub
+Village des Eleveurs
+fin Zaap
+
+Ressource
+map 9, -19
+ressource position, 386, 320, couleur, 134, 133, 102
+ressource position, 429, 302, couleur, 151, 123, 50
+ressource position, 746, 199, couleur, 103, 73, 44
+ressource position, 796, 183, couleur, 96, 97, 82
+ressource position, 877, 142, couleur, 123, 84, 11
+ressource position, 896, 449, couleur, 104, 103, 89
+ressource position, 938, 429, couleur, 105, 104, 89
+map 10, -19
+ressource position, 695, 329, couleur, 61, 93, 36
+ressource position, 462, 415, couleur, 157, 105, 15
+ressource position, 495, 432, couleur, 157, 105, 15
+ressource position, 652, 358, couleur, 16, 68, 141
+fin Ressource
+
+Caverne
+New 1, -17
+position, 881, 513, 5, 5, couleur, 174, 34, 23, pos, 634, 218
+position, 1164, 214, 5, 5, couleur, 43, 43, 21, pos, 938, 164
+ressource position, 856, 228, couleur, 49, 34, 20
+ressource position, 731, 298, couleur, 43, 28, 3
+ressource position, 340, 542, couleur, 91, 61, 7
+position, 208, 642, 5, 5, couleur, 133, 127, 60, pos, 334, 133
+ressource position, 1048, 212, couleur, 14, 25, 10
+ressource position, 316, 381, couleur, 86, 52, 8
+ressource position, 427, 323, couleur, 56, 36, 21
+ressource position, 875, 395, couleur, 46, 32, 19
+fin Caverne
+
+final

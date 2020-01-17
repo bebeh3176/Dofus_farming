@@ -1,0 +1,106 @@
+Etain Campement Bwork
+
+Action
+Zaap Bord de la foret malefique
+Go to -1, 8
+Go to -6, 7, sauf, -1, 8, 473, 333, 71, 22
+Go to -7, 7
+Rentre Caverne
+Go to 2
+Check ressource
+Go to 4
+Check ressource
+Go to 5
+Check ressource
+Go to 6
+Check ressource
+Go to 8
+Sortie Caverne
+Go to -6, 6
+Rentre Caverne
+Go to 1
+Check ressource
+Go to 2
+Sortie Caverne
+Go to -4, 2
+Rentre Caverne
+Go to 1
+Check ressource
+Go to 2
+Check ressource
+Go to 4
+Check ressource
+Go to 6
+Check ressource
+Go to 7
+Check ressource
+Go to 8
+Sortie Caverne
+fin Action
+
+Zaap
+Bord de la foret malefique
+Village des Eleveurs
+fin Zaap
+
+
+Caverne
+New -7, 7
+position, 412, 112, 30, 30, couleur, 155, 138, 91, position, 261, 87
+position, 442, 253, 10, 5, couleur, 22, 15, 9, position, 813, 342
+position, 988, 634, 10, 5, couleur, 85, 57, 23, pos, 836, 244
+ressource position, 419, 283, couleur, 29, 29, 7
+ressource position, 790, 261, couleur, 82, 91, 26
+ressource position, 899, 316, couleur, 52, 59, 15
+ressource position, 462, 298, couleur, 65, 63, 27
+position, 694, 237, 10, 5, couleur, 22, 15, 9, position, 813, 342
+position, 878, 292, 10, 5, couleur, 93, 61, 19, pos, 564, 331
+ressource position, 424, 387, couleur, 115, 75, 0
+ressource position, 460, 369, couleur, 127, 87, 0
+ressource position, 351, 422, couleur, 66, 31, 0
+ressource position, 1117, 424, couleur, 44, 34, 17
+ressource position, 1153, 442, couleur, 33, 27, 13
+ressource position, 1044, 242, couleur, 58, 51, 32
+position, 876, 619, 10, 5, couleur, 43, 29, 19, position, 882, 398
+ressource position, 531, 335, couleur, 73, 72, 56
+ressource position, 865, 263, couleur, 12, 33, 45
+ressource position, 901, 280, couleur, 8, 22, 28
+position, 369, 652, 10, 5, couleur, 93, 61, 19, pos, 564, 331
+ressource position, 424, 387, couleur, 115, 75, 0
+ressource position, 460, 369, couleur, 127, 87, 0
+ressource position, 351, 422, couleur, 66, 31, 0
+ressource position, 1117, 424, couleur, 44, 34, 17
+ressource position, 1153, 442, couleur, 33, 27, 13
+ressource position, 1044, 242, couleur, 58, 51, 32
+position, 1020, 726, 10, 5, couleur, 22, 15, 9, position, 813, 342
+position, 412, 112, 30, 30, couleur, 155, 138, 91, position, 261, 87
+New -6, 6
+position, 462, 257, 25, 25, couleur, 121, 78, 50, position, 989, 118
+position, 986, 600, 15, 10, couleur, 156, 110, 48, position, 664,  235
+ressource position, 899, 286, couleur, 55, 60, 11
+position, 462, 257, 25, 25, couleur, 121, 78, 50, position, 989, 118
+New -4, 2
+position, 1011, 291, 25, 25, couleur, 108, 99, 13, pos, 254, 200
+position, 1100, 475, 10, 5, couleur, 131, 58, 6, pos, 701, 240
+ressource position, 538, 267, couleur, 44, 51, 11
+position, 1029, 366, 10, 5, couleur, 102, 63, 17, pos, 824, 234
+ressource position, 640, 282, couleur, 96, 64, 0
+ressource position, 707, 283, couleur, 93, 57, 0
+ressource position, 1072, 360, couleur, 242, 184, 32
+position, 993, 349, 10, 5, couleur, 97, 75, 42, pos, 697, 227
+position, 594, 512, 10, 5, couleur, 69, 46, 17, pos, 935, 437
+ressource position, 757, 319, couleur, 31, 31, 5
+ressource position, 831, 357, couleur, 58, 52, 37
+ressource position, 868, 373, couleur, 45, 40, 23
+ressource position, 647, 322, couleur, 49, 42, 27
+position, 666, 621, 10, 5, couleur, 56, 42, 24, pos, 945, 222
+position, 340, 529, 10, 5, couleur, 112, 81, 31, pos, 1055, 260
+ressource position, 640, 282, couleur, 96, 64, 0
+ressource position, 707, 283, couleur, 93, 57, 0
+ressource position, 1072, 360, couleur, 242, 184, 32
+position, 448, 693, 10, 5, couleur, 155, 125, 85, pos, 707, 238
+ressource position, 538, 267, couleur, 44, 51, 11
+position, 738, 758, 10, 5, couleur, 164, 142, 32, pos, 1196, 87
+fin Caverne
+
+final

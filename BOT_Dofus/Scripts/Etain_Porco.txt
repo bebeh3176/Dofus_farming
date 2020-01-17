@@ -1,0 +1,111 @@
+Etain territoire porcos
+
+Action
+Zaap Plaine des Scarafeuilles
+Go to 1, 32
+Rentre Caverne
+Go to 1
+Check ressource
+Go to 2
+Check ressource
+Go to 3
+Check ressource
+Go to 5
+Check ressource
+Go to 6
+Check ressource
+Go to 7
+Check ressource
+Go to 8
+Check ressource
+Go to 9
+Sortie Caverne
+Go to -1, 33
+Rentre Caverne
+Go to 1
+Check ressource
+Go to 2
+Check ressource
+Go to 3
+Check ressource
+Go to 4
+Check ressource
+Sortie Caverne
+fin Action
+
+Zaap
+Plaine des Scarafeuilles
+Village des Eleveurs
+fin Zaap
+
+
+Caverne
+New 1, 32
+position, 601, 142, 32, 36, couleur, 164, 101, 61, position, 727, 141
+position, 959, 411, 10, 7, couleur, 10, 81, 59, position, 847, 159
+ressource position, 467, 318, couleur, 0, 76, 96
+ressource position, 750, 255, couleur, 0, 126, 93
+ressource position, 886, 276, couleur, 5, 169, 127
+ressource position, 999, 333, couleur, 0, 79, 77
+position, 395, 549, 12, 9, couleur, 8, 40, 20, position, 869, 169
+ressource position, 775, 193, couleur, 62, 118, 46
+ressource position, 721, 214, couleur, 84, 97, 9
+ressource position, 664, 241, couleur, 58, 115, 35
+ressource position, 637, 255, couleur, 53, 89, 9
+ressource position, 386, 380, couleur, 31, 63, 62
+ressource position, 357, 397, couleur, 34, 50, 8
+ressource position, 970, 292, couleur, 45, 60, 31
+position, 660, 486, 20, 17, couleur, 12, 40, 21, position, 735, 236
+ressource position, 803, 346, couleur, 52, 151, 82
+ressource position, 467, 339, couleur, 22, 116, 127
+position, 761, 338, 10, 5, couleur, 12, 44, 22, position, 733, 240
+position, 904, 270, 9, 7, couleur, 8, 40, 20, position, 874, 167
+ressource position, 775, 193, couleur, 62, 118, 46
+ressource position, 721, 214, couleur, 84, 97, 9
+ressource position, 664, 241, couleur, 58, 115, 35
+ressource position, 637, 255, couleur, 53, 89, 9
+ressource position, 386, 380, couleur, 31, 63, 62
+ressource position, 357, 397, couleur, 34, 50, 8
+ressource position, 970, 292, couleur, 45, 60, 31
+position, 398, 468, 8, 5, couleur, 0, 22, 25, position, 838, 206
+ressource position, 554, 242, couleur, 0, 63, 77
+ressource position, 582, 227, couleur, 0, 55, 70
+ressource position, 638, 199, couleur, 0, 31, 7
+ressource position, 662, 193, couleur, 0, 44, 33
+ressource position, 889, 306, couleur, 0, 37, 74
+ressource position, 916, 319, couleur, 5, 38, 85
+position, 511, 328, 11, 5, couleur, 8, 40, 20, position, 872, 167
+ressource position, 775, 193, couleur, 62, 118, 46
+ressource position, 721, 214, couleur, 84, 97, 9
+ressource position, 664, 241, couleur, 58, 115, 35
+ressource position, 637, 255, couleur, 53, 89, 9
+ressource position, 386, 380, couleur, 31, 63, 62
+ressource position, 357, 397, couleur, 34, 50, 8
+ressource position, 970, 292, couleur, 45, 60, 31
+position, 313, 544, 10, 2, couleur, 0, 31, 17, position, 635, 226
+ressource position, 467, 318, couleur, 0, 76, 96
+ressource position, 750, 255, couleur, 0, 126, 93
+ressource position, 999, 333, couleur, 0, 79, 77
+position, 266, 689, 157, 6, couleur, 134, 81, 49, position, 704, 124
+New -1, 33
+position, 315, 81, 51, 28, couleur, 136, 83, 52, position, 276, 146
+position, 931, 341, 10, 7, couleur, 0, 41, 35, position, 694, 129
+ressource position, 609, 270, couleur, 0, 86, 89
+ressource position, 665, 243, couleur, 0, 103, 94
+ressource position, 915, 234, couleur, 16, 176, 142
+ressource position, 942, 250, couleur, 6, 84, 47
+position, 426, 538, 9, 6, couleur, 0, 20, 26, position, 754, 130
+ressource position, 832, 248, couleur, 0, 49, 73
+position, 511, 356, 12, 5, couleur, 0, 60, 56, position, 687, 172
+ressource position, 831, 305, couleur, 0, 59, 74
+ressource position, 609, 298, couleur, 0, 76, 80
+ressource position, 412, 396, couleur, 12, 127, 106
+position, 260, 690, 160, 9, couleur, 0, 62, 63, position, 560, 269
+ressource position, 746, 318, couleur, 3, 77, 58
+ressource position, 775, 333, couleur, 0, 66, 78
+ressource position, 670, 287, couleur, 0, 43, 52
+ressource position, 605, 243, couleur, 2, 38, 51
+ressource position, 467, 323, couleur, 4, 84, 61
+fin Caverne
+
+final

@@ -1,0 +1,45 @@
+Etain Cania
+
+Action
+Zaap Plaines Rocheuses
+Go to -17, -44
+Go to -14, -43
+Rentre Caverne
+Go to 1
+Check ressource
+Go to 2
+Sortie Caverne
+Go to -14, -40
+Go to -17, -40
+Rentre Caverne
+Go to 1
+Check ressource
+Sortie Caverne
+fin Action
+
+Zaap
+Plaines Rocheuses
+Village des Eleveurs
+fin Zaap
+
+Caverne
+New -14, -43
+position, 496, 140, 54, 40, couleur, 181, 177, 74, position, 960, 109
+position, 1030, 502, 10, 97, couleur, 14, 13, 10, position, 697, 119
+ressource position, 412, 227, couleur, 42, 62, 23
+ressource position, 386, 243, couleur, 69, 45, 6
+ressource position, 442, 216, couleur, 77, 51, 7
+ressource position, 774, 222, couleur, 42, 33, 19
+ressource position, 802, 236, couleur, 42, 33, 19
+ressource position, 831, 250, couleur, 36, 29, 18
+ressource position, 859, 265, couleur, 36, 29, 18
+position, 276, 692, 142, 4, couleur, 181, 177, 74, position, 916, 95
+New -17, -40
+position, 316, 393, 51, 32, couleur, 208, 195, 77, position, 511, 331
+position, 273, 691, 149, 6, couleur, 43, 39, 28, position, 881, 345
+ressource position, 775, 221, couleur, 34, 43, 25
+ressource position, 411, 226, couleur, 61, 66, 73
+ressource position, 355, 255, couleur, 56, 62, 69
+fin Caverne
+
+final

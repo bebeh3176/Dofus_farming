@@ -1,0 +1,51 @@
+Etain Foret abraknide
+
+
+
+Action
+Zaap Village des Eleveurs
+Go to -15, -7
+Go to -14, -9
+Rentre Caverne
+Go to 1
+Check ressource
+Go to 2
+Sortie Caverne
+Go to -14, -13
+Go to -13, -15
+Go to -11, -16
+Rentre Caverne
+Go to 1
+Check ressource
+Sortie Caverne
+fin Action
+
+Zaap
+Village des Eleveurs
+fin Zaap
+
+
+Caverne
+New -14, -9
+position, 729, 470, 16, 9, couleur, 255, 214, 26, position, 998, 82
+position, 843, 256, 20, 48, couleur, 72, 47, 15, position, 660, 200
+ressource position, 526, 255, couleur, 58, 71, 20
+ressource position, 436, 356, couleur, 70, 80, 31
+ressource position, 580, 226, couleur, 121, 92, 40
+ressource position, 610, 212, couleur, 74, 46, 9
+ressource position, 634, 236, couleur, 56, 38, 18
+ressource position, 693, 265, couleur, 87, 60, 35
+ressource position, 720, 279, couleur, 113, 76, 43
+ressource position, 747, 291, couleur, 124, 84, 30
+ressource position, 353, 425, couleur, 51, 67, 84
+ressource position, 326, 438, couleur, 8, 27, 48
+ressource position, 298, 453, couleur, 5, 16, 28
+position, 262, 689, 149, 7, couleur, 201, 150, 21, position, 996, 84
+New -11, -16
+position, 641, 201, 50, 27, couleur, 73, 83, 0, position, 748, 150
+position, 270, 690, 140, 8, couleur, 62, 81, 21, position, 685, 148
+ressource position, 487, 276, couleur, 65, 85, 22
+ressource position, 872, 256, couleur, 58, 66, 54
+fin Caverne
+
+final
