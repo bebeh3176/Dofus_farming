@@ -628,10 +628,12 @@ def kill_dofus(restart=True, commentaire = 'Pas de commentaire'):
             # lance le personnage
             template = cv2.imread('Picture/personnage.png', 0)
             template_BW = cv2.threshold(template, 160, 255, cv2.THRESH_BINARY)[1]
+            template2 = cv2.imread('Picture/choix.png', 0)
+            template_BW2 = cv2.threshold(template2, 160, 255, cv2.THRESH_BINARY)[1]
             for i in range(4):
                 time.sleep(10)
                 image = pyautogui.screenshot()
-                image = image.crop((448, 82, 878, 132))
+                image = image.crop((400, 60, 950, 150))
                 img_rgb = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
                 img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
                 img_BW = cv2.threshold(img_gray, 160, 255, cv2.THRESH_BINARY)[1]
@@ -640,6 +642,12 @@ def kill_dofus(restart=True, commentaire = 'Pas de commentaire'):
                 if np.any(res2 <= threshold):
                     divers.move_mouse(736, 547, 100, 19, alea=False)
                     break
+                res2 = cv2.matchTemplate(img_BW, template_BW2, cv2.TM_SQDIFF_NORMED)
+                threshold = 0.4
+                if np.any(res2 <= threshold):
+                    divers.move_mouse(736, 547, 100, 19, alea=False)
+                    break
+
             # regarde si le click a fonctionne
             for i in range(3):
                 time.sleep(15)
