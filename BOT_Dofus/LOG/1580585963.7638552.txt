@@ -1,3 +1,0 @@
-bug dans go to pos trop de changement
-attempt number 0
-attempt number 1

@@ -17,7 +17,7 @@ class App(QWidget):
         self.title = 'Bot dofus'
         self.left = 400
         self.top = 60
-        self.width = 640
+        self.width = 700
         self.height = 480
         self.dictoZaap = {'Village des Eleveurs':0}
         self.listPath = []
@@ -63,16 +63,16 @@ class App(QWidget):
 
 
         self.ZaapLabel = QLabel('Zaap a mettre en favorie:',self)
-        self.ZaapLabel.setGeometry(370,20,150,20)
+        self.ZaapLabel.setGeometry(420,20,150,20)
         self.Zaap = QTextEdit(self)
         self.Zaap.setReadOnly(True)
-        self.Zaap.setGeometry(370,45,150,200)
+        self.Zaap.setGeometry(420,45,200,230)
 
         self.ScriptLabel = QLabel('Script choisie:',self)
         self.ScriptLabel.setGeometry(200,20,150,20)
         self.Script = QTextEdit(self)
         self.Script.setReadOnly(True)
-        self.Script.setGeometry(200,45,150,200)
+        self.Script.setGeometry(200,45,200,230)
 
         self.show()
 
@@ -80,8 +80,14 @@ class App(QWidget):
         listener = Listener(on_press = self.Faire_Pause)
         listener.start()
         test = listener.running
+        duration = int(float(self.Runtime.value()) * 3600)
         start_time = time.time()
-        duration = int(float(self.Runtime.value())*3600)
+
+        time_start_log = (time.time() / 60) % 10000
+        text_name = 'LOG/{}.txt'.format(time_start_log)
+        Log_message = open(text_name, "w")
+        Log_message.write('Le bot a ete lance a {}'.format(time_start_log))
+        Log_message.close()
         while True:
             for i in self.listPath:
                 script = Fct_script.lire_path(i)

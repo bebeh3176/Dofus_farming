@@ -552,7 +552,7 @@ def Go_to_POS(GOTO, HorizontaleFirst=True, sauf={}, pause=[False], retry=1):
 
 def kill_dofus(restart=True, commentaire = 'Pas de commentaire'):
     picture_erreur = pyautogui.screenshot()
-    time_erreur = time.time()
+    time_erreur = (time.time()/60) % 10000
     name = 'LOG/{}.png'.format(time_erreur)
     text_name = 'LOG/{}.txt'.format(time_erreur)
     Log_message = open(text_name, "w")
@@ -630,8 +630,8 @@ def kill_dofus(restart=True, commentaire = 'Pas de commentaire'):
             template_BW = cv2.threshold(template, 160, 255, cv2.THRESH_BINARY)[1]
             template2 = cv2.imread('Picture/choix.png', 0)
             template_BW2 = cv2.threshold(template2, 160, 255, cv2.THRESH_BINARY)[1]
-            for i in range(4):
-                time.sleep(10)
+            for i in range(10):
+                time.sleep(4)
                 image = pyautogui.screenshot()
                 image = image.crop((400, 60, 950, 150))
                 img_rgb = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
@@ -649,8 +649,8 @@ def kill_dofus(restart=True, commentaire = 'Pas de commentaire'):
                     break
 
             # regarde si le click a fonctionne
-            for i in range(3):
-                time.sleep(15)
+            for i in range(9):
+                time.sleep(5)
                 image = pyautogui.screenshot()
                 image = image.crop((448, 82, 878, 132))
                 img_rgb = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
