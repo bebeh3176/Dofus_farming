@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b2a868c-6a51-4fd2-af5c-281e4fddd0b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.screenshot2019-1229_21-53-32-665820.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.screenshot2020-0115_22-09-29-051257.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.screenshot2020-0116_18-39-18-380433.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Bot_Dofus.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_Dofus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Divers/Combat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Divers/Combat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Divers/Fct_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/Divers/Fct_script.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Divers/fonction_principal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Divers/fonction_principal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG/1580531905.5185828.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG/1580531905.5185828.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG/1580532097.6357765.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG/1580532097.6357765.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG/1580532265.1391594.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG/1580532265.1391594.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG/1580542700.8607228.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG/1580542700.8607228.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG/1580585963.7638552.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG/1580585963.7638552.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEST.py" beforeDir="false" afterPath="$PROJECT_DIR$/TEST.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEST_MAP.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +33,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1SvgQVZK8yx1c196pqSVyzyAhAG" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -46,19 +45,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Picture" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Divers" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Picture" />
-      <recent name="$PROJECT_DIR$/Divers" />
-      <recent name="D:\Documents\BOT_Dofus" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Documents\BOT_Dofus\Picture" />
       <recent name="D:\Documents\BOT_Dofus\Divers" />
       <recent name="D:\Documents\BOT_Dofus\Scripts" />
+      <recent name="D:\Documents\BOT_Dofus" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Divers" />
+      <recent name="$PROJECT_DIR$/Picture" />
       <recent name="D:\Documents\BOT_Dofus" />
     </key>
   </component>
@@ -126,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Combat" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Fct_script" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BOT_Dofus" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,7 +137,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Divers/Combat.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Divers/Fct_script.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TEST" />
         <item itemvalue="Python.CLICK" />
         <item itemvalue="Python.fonction_principal" />
-        <item itemvalue="Python.TEST" />
+        <item itemvalue="Python.Fct_script" />
         <item itemvalue="Python.Caverne_format" />
-        <item itemvalue="Python.Combat" />
       </list>
     </recent_temporary>
   </component>
@@ -229,50 +228,58 @@
       <screen x="0" y="27" width="1280" height="676" />
     </state>
     <state x="317" y="169" width="636" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1280.676@0.27.1280.676" timestamp="1577664993049" />
+    <state x="373" y="113" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581805483518">
+      <screen x="0" y="27" width="1280" height="676" />
+    </state>
+    <state x="373" y="113" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1280.676@0.27.1280.676" timestamp="1581805483518" />
     <state x="0" y="107" width="1270" height="488" key="#xdebugger.XInspectDialog" timestamp="1577750629463">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
     <state x="0" y="107" width="1270" height="488" key="#xdebugger.XInspectDialog/0.27.1280.676@0.27.1280.676" timestamp="1577750629463" />
-    <state width="1257" height="192" key="GridCell.Tab.0.bottom" timestamp="1581254927741">
+    <state width="1257" height="77" key="GridCell.Tab.0.bottom" timestamp="1582255576021">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="192" key="GridCell.Tab.0.bottom/0.27.1280.676@0.27.1280.676" timestamp="1581254927741" />
+    <state width="1257" height="77" key="GridCell.Tab.0.bottom/0.27.1280.676@0.27.1280.676" timestamp="1582255576021" />
     <state width="1121" height="228" key="GridCell.Tab.0.bottom/0.27.1280.700@0.27.1280.700" timestamp="1575677689172" />
-    <state width="1257" height="192" key="GridCell.Tab.0.center" timestamp="1581254927738">
+    <state width="1257" height="77" key="GridCell.Tab.0.center" timestamp="1582255576020">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="192" key="GridCell.Tab.0.center/0.27.1280.676@0.27.1280.676" timestamp="1581254927738" />
+    <state width="1257" height="77" key="GridCell.Tab.0.center/0.27.1280.676@0.27.1280.676" timestamp="1582255576020" />
     <state width="1121" height="228" key="GridCell.Tab.0.center/0.27.1280.700@0.27.1280.700" timestamp="1575677689172" />
-    <state width="1257" height="192" key="GridCell.Tab.0.left" timestamp="1581254927727">
+    <state width="1257" height="77" key="GridCell.Tab.0.left" timestamp="1582255576020">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="192" key="GridCell.Tab.0.left/0.27.1280.676@0.27.1280.676" timestamp="1581254927727" />
+    <state width="1257" height="77" key="GridCell.Tab.0.left/0.27.1280.676@0.27.1280.676" timestamp="1582255576020" />
     <state width="1121" height="228" key="GridCell.Tab.0.left/0.27.1280.700@0.27.1280.700" timestamp="1575677689171" />
-    <state width="1257" height="192" key="GridCell.Tab.0.right" timestamp="1581254927740">
+    <state width="1257" height="77" key="GridCell.Tab.0.right" timestamp="1582255576020">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="192" key="GridCell.Tab.0.right/0.27.1280.676@0.27.1280.676" timestamp="1581254927740" />
+    <state width="1257" height="77" key="GridCell.Tab.0.right/0.27.1280.676@0.27.1280.676" timestamp="1582255576020" />
     <state width="1121" height="228" key="GridCell.Tab.0.right/0.27.1280.700@0.27.1280.700" timestamp="1575677689172" />
-    <state width="1257" height="192" key="GridCell.Tab.1.bottom" timestamp="1581254927421">
+    <state width="868" height="195" key="GridCell.Tab.1.bottom" timestamp="1582251145409">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="192" key="GridCell.Tab.1.bottom/0.27.1280.676@0.27.1280.676" timestamp="1581254927421" />
+    <state width="868" height="195" key="GridCell.Tab.1.bottom/0.27.1280.676@0.27.1280.676" timestamp="1582251145409" />
     <state width="1121" height="228" key="GridCell.Tab.1.bottom/0.27.1280.700@0.27.1280.700" timestamp="1575677689173" />
-    <state width="1257" height="192" key="GridCell.Tab.1.center" timestamp="1581254927420">
+    <state width="868" height="195" key="GridCell.Tab.1.center" timestamp="1582251145409">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="192" key="GridCell.Tab.1.center/0.27.1280.676@0.27.1280.676" timestamp="1581254927420" />
+    <state width="868" height="195" key="GridCell.Tab.1.center/0.27.1280.676@0.27.1280.676" timestamp="1582251145409" />
     <state width="1121" height="228" key="GridCell.Tab.1.center/0.27.1280.700@0.27.1280.700" timestamp="1575677689172" />
-    <state width="1257" height="192" key="GridCell.Tab.1.left" timestamp="1581254927420">
+    <state width="868" height="195" key="GridCell.Tab.1.left" timestamp="1582251145408">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="192" key="GridCell.Tab.1.left/0.27.1280.676@0.27.1280.676" timestamp="1581254927420" />
+    <state width="868" height="195" key="GridCell.Tab.1.left/0.27.1280.676@0.27.1280.676" timestamp="1582251145408" />
     <state width="1121" height="228" key="GridCell.Tab.1.left/0.27.1280.700@0.27.1280.700" timestamp="1575677689172" />
-    <state width="1257" height="192" key="GridCell.Tab.1.right" timestamp="1581254927421">
+    <state width="868" height="195" key="GridCell.Tab.1.right" timestamp="1582251145409">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="192" key="GridCell.Tab.1.right/0.27.1280.676@0.27.1280.676" timestamp="1581254927421" />
+    <state width="868" height="195" key="GridCell.Tab.1.right/0.27.1280.676@0.27.1280.676" timestamp="1582251145409" />
     <state width="1121" height="228" key="GridCell.Tab.1.right/0.27.1280.700@0.27.1280.700" timestamp="1575677689172" />
+    <state x="380" y="27" width="510" height="676" key="RollbackChangesDialog" timestamp="1581397085790">
+      <screen x="0" y="27" width="1280" height="676" />
+    </state>
+    <state x="380" y="27" width="510" height="676" key="RollbackChangesDialog/0.27.1280.676@0.27.1280.676" timestamp="1581397085790" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1577994344072">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
@@ -281,25 +288,17 @@
       <screen x="0" y="27" width="1280" height="676" />
     </state>
     <state width="640" height="339" key="XDebugger.FullValuePopup/0.27.1280.676@0.27.1280.676" timestamp="1575340933036" />
-    <state x="318" y="173" key="com.intellij.ide.util.TipDialog" timestamp="1581219224505">
+    <state x="318" y="173" key="com.intellij.ide.util.TipDialog" timestamp="1582250558351">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state x="318" y="173" key="com.intellij.ide.util.TipDialog/0.27.1280.676@0.27.1280.676" timestamp="1581219224505" />
+    <state x="318" y="173" key="com.intellij.ide.util.TipDialog/0.27.1280.676@0.27.1280.676" timestamp="1582250558351" />
+    <state x="190" y="52" width="890" height="624" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1581778162241">
+      <screen x="0" y="27" width="1280" height="676" />
+    </state>
+    <state x="190" y="52" width="890" height="624" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.27.1280.676@0.27.1280.676" timestamp="1581778162241" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Divers/fonction_principal.py</url>
-          <line>696</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Divers/fonction_principal.py</url>
-          <line>687</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -308,11 +307,5 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="pos[6]" />
-        <watch expression="pos" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

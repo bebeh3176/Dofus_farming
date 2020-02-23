@@ -192,7 +192,7 @@ def modeTacticCreature(pause= [False]):
         time.sleep(0.8 + random.random() * 0.5)
     return
 
-def combat(pause= [False]):
+def combat(option, pause= [False]):
     try:
         ColorNextTurn = (213, 243, 0)
         #cra = [(253, 190, 45),(216, 138, 22),(119, 74, 2)]#Couleur Enutrof
@@ -200,8 +200,8 @@ def combat(pause= [False]):
         creature = [(77, 77, 93), (46, 54, 61), (126, 126, 142)]
         Sort_Sans_Vue = (594, 667)
         Sort_Avec_Vue = (620, 667)
-        PO_Sans_Vue = 11
-        pm = 3
+        PO_Sort = option.po
+        pm = option.pm
 
         pos_ennemi = (0,0)
         obst = {}
@@ -263,12 +263,12 @@ def combat(pause= [False]):
                         break
                 pos_perso = (pos_perso[0]+2, pos_perso[1] + 19)
                 pos_ennemi = (pos_ennemi[0]+2, pos_ennemi[1] + 19)
-                pos_perso = pos_abs_2_rel(pos_perso,origine)
-                pos_ennemi = pos_abs_2_rel(pos_ennemi,origine)
+                pos_perso = pos_abs_2_rel(pos_perso, origine)
+                pos_ennemi = pos_abs_2_rel(pos_ennemi, origine)
 
                 dist = abs(pos_perso[0]-pos_ennemi[0]) + abs(pos_perso[1]-pos_ennemi[1])
                 # if too far, get closer
-                if(dist > PO_Sans_Vue):
+                if(dist > PO_Sort):
                     # enleve click sort pour bouger
                     if(bool_sort):
                         bool_sort = False
@@ -281,7 +281,7 @@ def combat(pause= [False]):
                     pos_perso = path[len(path)-5]
                     dist = abs(pos_perso[0]-pos_ennemi[0]) + abs(pos_perso[1]-pos_ennemi[1])
 
-                if(dist <= PO_Sans_Vue):
+                if(dist <= PO_Sort):
                     if(ligne_de_vue(obst,pos_perso,pos_ennemi)):
                         Go_to = pos_rel_2_abs(pos_ennemi,origine)
 

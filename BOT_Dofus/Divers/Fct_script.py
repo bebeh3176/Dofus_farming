@@ -1,5 +1,6 @@
 from Divers import fonction_principal as Fct
 
+
 def lire_zaap(script,listzaap):
     begin = False
     for i in script:
