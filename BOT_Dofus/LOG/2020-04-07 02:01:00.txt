@@ -1,0 +1,8 @@
+bug en rentrant dans l havreSac
+attempt number 0
+connecter a laide du mot de passe
+attempt number 1
+connecter a laide du mot de passe
+attempt number 2
+connecter a laide du mot de passe
+fermeture apres 3 essaie

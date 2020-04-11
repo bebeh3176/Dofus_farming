@@ -2,25 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b2a868c-6a51-4fd2-af5c-281e4fddd0b0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.screenshot2019-1229_21-53-32-665820.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.screenshot2020-0115_22-09-29-051257.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.screenshot2020-0116_18-39-18-380433.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Bot_Dofus.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_Dofus.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Divers/Combat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Divers/Combat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLICK.py" beforeDir="false" afterPath="$PROJECT_DIR$/CLICK.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Divers/Class_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Divers/Class_bot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Divers/Fct_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/Divers/Fct_script.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Divers/fonction_principal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Divers/fonction_principal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEST.py" beforeDir="false" afterPath="$PROJECT_DIR$/TEST.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEST_MAP.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Bois_de_litneg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Bois_de_litneg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Etain_Abraknide.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Etain_Abraknide.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Etain_Porco.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Etain_Porco.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Etain_astrub.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Etain_astrub.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Etain_plaine_de_cania.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Etain_plaine_de_cania.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="BOT_Dofus" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,7 +35,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -46,18 +42,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Divers" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Divers" />
+      <recent name="$PROJECT_DIR$/Picture" />
+      <recent name="D:\Documents\BOT_Dofus" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Documents\BOT_Dofus\Picture" />
       <recent name="D:\Documents\BOT_Dofus\Divers" />
       <recent name="D:\Documents\BOT_Dofus\Scripts" />
-      <recent name="D:\Documents\BOT_Dofus" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Divers" />
-      <recent name="$PROJECT_DIR$/Picture" />
       <recent name="D:\Documents\BOT_Dofus" />
     </key>
   </component>
@@ -190,25 +187,13 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.TEST" />
         <item itemvalue="Python.CLICK" />
+        <item itemvalue="Python.TEST" />
         <item itemvalue="Python.fonction_principal" />
         <item itemvalue="Python.Fct_script" />
         <item itemvalue="Python.Caverne_format" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -224,58 +209,50 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="317" y="169" width="636" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577664993049">
-      <screen x="0" y="27" width="1280" height="676" />
-    </state>
-    <state x="317" y="169" width="636" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1280.676@0.27.1280.676" timestamp="1577664993049" />
     <state x="373" y="113" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581805483518">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
     <state x="373" y="113" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1280.676@0.27.1280.676" timestamp="1581805483518" />
-    <state x="0" y="107" width="1270" height="488" key="#xdebugger.XInspectDialog" timestamp="1577750629463">
+    <state x="376" y="217" width="518" height="294" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586550817272">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state x="0" y="107" width="1270" height="488" key="#xdebugger.XInspectDialog/0.27.1280.676@0.27.1280.676" timestamp="1577750629463" />
-    <state width="1257" height="77" key="GridCell.Tab.0.bottom" timestamp="1582255576021">
+    <state x="376" y="217" width="518" height="294" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.27.1280.676@0.27.1280.676" timestamp="1586550817272" />
+    <state x="179" y="27" width="912" height="676" key="CommitChangelistDialog2" timestamp="1586550756309">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="77" key="GridCell.Tab.0.bottom/0.27.1280.676@0.27.1280.676" timestamp="1582255576021" />
-    <state width="1121" height="228" key="GridCell.Tab.0.bottom/0.27.1280.700@0.27.1280.700" timestamp="1575677689172" />
-    <state width="1257" height="77" key="GridCell.Tab.0.center" timestamp="1582255576020">
+    <state x="179" y="27" width="912" height="676" key="CommitChangelistDialog2/0.27.1280.676@0.27.1280.676" timestamp="1586550756309" />
+    <state width="1257" height="179" key="GridCell.Tab.0.bottom" timestamp="1586560868348">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="77" key="GridCell.Tab.0.center/0.27.1280.676@0.27.1280.676" timestamp="1582255576020" />
-    <state width="1121" height="228" key="GridCell.Tab.0.center/0.27.1280.700@0.27.1280.700" timestamp="1575677689172" />
-    <state width="1257" height="77" key="GridCell.Tab.0.left" timestamp="1582255576020">
+    <state width="1257" height="179" key="GridCell.Tab.0.bottom/0.27.1280.676@0.27.1280.676" timestamp="1586560868348" />
+    <state width="1257" height="179" key="GridCell.Tab.0.center" timestamp="1586560868347">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="77" key="GridCell.Tab.0.left/0.27.1280.676@0.27.1280.676" timestamp="1582255576020" />
-    <state width="1121" height="228" key="GridCell.Tab.0.left/0.27.1280.700@0.27.1280.700" timestamp="1575677689171" />
-    <state width="1257" height="77" key="GridCell.Tab.0.right" timestamp="1582255576020">
+    <state width="1257" height="179" key="GridCell.Tab.0.center/0.27.1280.676@0.27.1280.676" timestamp="1586560868347" />
+    <state width="1257" height="179" key="GridCell.Tab.0.left" timestamp="1586560868347">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="77" key="GridCell.Tab.0.right/0.27.1280.676@0.27.1280.676" timestamp="1582255576020" />
-    <state width="1121" height="228" key="GridCell.Tab.0.right/0.27.1280.700@0.27.1280.700" timestamp="1575677689172" />
-    <state width="868" height="195" key="GridCell.Tab.1.bottom" timestamp="1582251145409">
+    <state width="1257" height="179" key="GridCell.Tab.0.left/0.27.1280.676@0.27.1280.676" timestamp="1586560868347" />
+    <state width="1257" height="179" key="GridCell.Tab.0.right" timestamp="1586560868347">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="868" height="195" key="GridCell.Tab.1.bottom/0.27.1280.676@0.27.1280.676" timestamp="1582251145409" />
-    <state width="1121" height="228" key="GridCell.Tab.1.bottom/0.27.1280.700@0.27.1280.700" timestamp="1575677689173" />
-    <state width="868" height="195" key="GridCell.Tab.1.center" timestamp="1582251145409">
+    <state width="1257" height="179" key="GridCell.Tab.0.right/0.27.1280.676@0.27.1280.676" timestamp="1586560868347" />
+    <state width="1257" height="179" key="GridCell.Tab.1.bottom" timestamp="1586560868354">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="868" height="195" key="GridCell.Tab.1.center/0.27.1280.676@0.27.1280.676" timestamp="1582251145409" />
-    <state width="1121" height="228" key="GridCell.Tab.1.center/0.27.1280.700@0.27.1280.700" timestamp="1575677689172" />
-    <state width="868" height="195" key="GridCell.Tab.1.left" timestamp="1582251145408">
+    <state width="1257" height="179" key="GridCell.Tab.1.bottom/0.27.1280.676@0.27.1280.676" timestamp="1586560868354" />
+    <state width="1257" height="179" key="GridCell.Tab.1.center" timestamp="1586560868348">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="868" height="195" key="GridCell.Tab.1.left/0.27.1280.676@0.27.1280.676" timestamp="1582251145408" />
-    <state width="1121" height="228" key="GridCell.Tab.1.left/0.27.1280.700@0.27.1280.700" timestamp="1575677689172" />
-    <state width="868" height="195" key="GridCell.Tab.1.right" timestamp="1582251145409">
+    <state width="1257" height="179" key="GridCell.Tab.1.center/0.27.1280.676@0.27.1280.676" timestamp="1586560868348" />
+    <state width="1257" height="179" key="GridCell.Tab.1.left" timestamp="1586560868348">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="868" height="195" key="GridCell.Tab.1.right/0.27.1280.676@0.27.1280.676" timestamp="1582251145409" />
-    <state width="1121" height="228" key="GridCell.Tab.1.right/0.27.1280.700@0.27.1280.700" timestamp="1575677689172" />
+    <state width="1257" height="179" key="GridCell.Tab.1.left/0.27.1280.676@0.27.1280.676" timestamp="1586560868348" />
+    <state width="1257" height="179" key="GridCell.Tab.1.right" timestamp="1586560868353">
+      <screen x="0" y="27" width="1280" height="676" />
+    </state>
+    <state width="1257" height="179" key="GridCell.Tab.1.right/0.27.1280.676@0.27.1280.676" timestamp="1586560868353" />
     <state x="380" y="27" width="510" height="676" key="RollbackChangesDialog" timestamp="1581397085790">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
@@ -284,14 +261,10 @@
       <screen x="0" y="27" width="1280" height="676" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.27.1280.676@0.27.1280.676" timestamp="1577994344072" />
-    <state width="640" height="339" key="XDebugger.FullValuePopup" timestamp="1575340933036">
+    <state x="318" y="173" key="com.intellij.ide.util.TipDialog" timestamp="1583976795485">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="640" height="339" key="XDebugger.FullValuePopup/0.27.1280.676@0.27.1280.676" timestamp="1575340933036" />
-    <state x="318" y="173" key="com.intellij.ide.util.TipDialog" timestamp="1582250558351">
-      <screen x="0" y="27" width="1280" height="676" />
-    </state>
-    <state x="318" y="173" key="com.intellij.ide.util.TipDialog/0.27.1280.676@0.27.1280.676" timestamp="1582250558351" />
+    <state x="318" y="173" key="com.intellij.ide.util.TipDialog/0.27.1280.676@0.27.1280.676" timestamp="1583976795485" />
     <state x="190" y="52" width="890" height="624" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1581778162241">
       <screen x="0" y="27" width="1280" height="676" />
     </state>

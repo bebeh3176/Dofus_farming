@@ -17,7 +17,7 @@ fin Action
 
 Zaap
 Cite d Astrub
-Village des Eleveurs
+Bonta Centre-ville
 fin Zaap
 
 Ressource

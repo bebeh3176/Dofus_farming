@@ -77,7 +77,7 @@ def lire_script(script):
         elif(i[0:3] == 'New') and begin:
             if first:
                 caverne_altuel = i[4:].split(', ')
-                caverne_altuel = (int(caverne_altuel[0]),int(caverne_altuel[1]))
+                caverne_altuel = (int(caverne_altuel[0]), int(caverne_altuel[1]))
                 first = False
                 pos = -1
             else:
@@ -92,7 +92,7 @@ def lire_script(script):
                 caverne_altuel = (int(caverne_altuel[0]),int(caverne_altuel[1]))
                 pos = -1
         elif begin:
-            if(i[0:8] == 'position'):
+            if i[0:8] == 'position':
                 ressource_caverne[pos] = ressource_caverne_temp
                 pos = pos+1
                 info = i.split(', ')
@@ -100,7 +100,7 @@ def lire_script(script):
                 couleur_caverne[pos] = (int(info[6]),int(info[7]),int(info[8]))
                 pos_couleur[pos] = (int(info[10]),int(info[11]))
                 ressource_caverne_temp = {}
-            elif(i[0:9] == 'ressource'):
+            elif i[0:9] == 'ressource':
                 itemlist = i.split(', ')
                 ressource_caverne_temp[(int(itemlist[1]), int(itemlist[2]))] = (int(itemlist[4]), int(itemlist[5]), int(itemlist[6]))
 
@@ -109,38 +109,38 @@ def lire_script(script):
     return action, Dicto_ressource, Tout_caverne
 
 
-def run_action(action, Dicto_ressource, Dicto_zaap, Dicto_caverne, pause = [False]):
+def run_action(action, Dicto_ressource, Dicto_zaap, Dicto_caverne, pause=[False]):
     bool_caverne = False
-    pos_caverne = (0,0)
+    pos_caverne = (0, 0)
     num_carte_caverne = 0
     for i in action:
-        if (i[0:5] == 'Go to'):
-            if(bool_caverne):
+        if i[0:5] == 'Go to':
+            if bool_caverne:
                 pos = i[6:]
-                num_carte_caverne = Fct.Go_to_POS_Caverne(int(pos),Dicto_caverne[pos_caverne][0],Dicto_caverne[pos_caverne][1],Dicto_caverne[pos_caverne][2],num_carte_caverne, pause= pause)
+                num_carte_caverne = Fct.Go_to_POS_Caverne(int(pos), Dicto_caverne[pos_caverne][0], Dicto_caverne[pos_caverne][1], Dicto_caverne[pos_caverne][2], num_carte_caverne, pause=pause)
             else:
                 pos = i[6:].split(', ')
                 NbSauf = int((len(pos) - 3)/6)
                 sauf = {}
                 for j in range(NbSauf):
                     sauf[(int(pos[j*6+3]), int(pos[j*6+4]))] = (int(pos[j*6+5]), int(pos[j*6+6]), int(pos[j*6+7]), int(pos[j*6+8]))
-                Fct.Go_to_POS([int(pos[0]), int(pos[1])],sauf = sauf, pause= pause)
+                Fct.Go_to_POS([int(pos[0]), int(pos[1])], sauf=sauf, pause=pause)
         if (i[0:6] == 'Sortie'):
             bool_caverne = False
             num_carte_caverne = 0
-        if (i[0:6] == 'Rentre'):
+        if i[0:6] == 'Rentre':
             pos_caverne = tuple(Fct.MAP_POS())
             bool_caverne = True
             num_carte_caverne = 0
-        if (i[0:5] == 'Check'):
-            if(bool_caverne):
-                Fct.ressource(Dicto_caverne[pos_caverne][3][num_carte_caverne], pause= pause)
+        if i[0:5] == 'Check':
+            if bool_caverne:
+                Fct.ressource(Dicto_caverne[pos_caverne][3][num_carte_caverne], pause=pause)
             else:
                 now = tuple(Fct.MAP_POS())
                 if now in Dicto_ressource:
-                    Fct.ressource(Dicto_ressource[now], pause= pause)
-        if(i[0:4] == 'Zaap'):
-            Fct.zaap(i[5:], Dicto_zaap, pause= pause)
+                    Fct.ressource(Dicto_ressource[now], pause=pause)
+        if i[0:4] == 'Zaap':
+            Fct.zaap(i[5:], Dicto_zaap, pause=pause)
 
 def list2dicto_Zaap(listZaap):
     dicto_all_zaap = {'Bord de la foret malefique':0,'Chateau d Amakna':1,'Coin des Bouftous':2,'Montagne des Craqueleurs':3,'Plaine des Scarafeuilles':4,

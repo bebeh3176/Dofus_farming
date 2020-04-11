@@ -10,7 +10,7 @@ def on_click(x, y, button, pressed):
 
 
 def detectclick():
-    listener = Listener(on_click = on_click)
+    listener = Listener(on_click=on_click)
     listener.start()
     test = listener.running
     while test:

@@ -1,0 +1,4 @@
+bug dans go to pos, ferme et reouvre
+attempt number 0
+connecter a laide du mot de passe
+reussite

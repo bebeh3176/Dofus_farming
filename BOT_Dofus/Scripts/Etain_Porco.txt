@@ -35,7 +35,7 @@ fin Action
 
 Zaap
 Plaine des Scarafeuilles
-Village des Eleveurs
+Bonta Centre-ville
 fin Zaap
 
 

@@ -19,7 +19,7 @@ fin Action
 
 Zaap
 Plaines Rocheuses
-Village des Eleveurs
+Bonta Centre-ville
 fin Zaap
 
 Caverne

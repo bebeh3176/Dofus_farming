@@ -1,15 +1,16 @@
 #!/usr/bin/env python3.7
 import sys
+import threading
+import time
+import tkinter as tk
+from datetime import datetime
+from tkinter import filedialog
+
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QTextEdit, QLabel, QDoubleSpinBox, QCheckBox
 from pynput.keyboard import Listener, Controller
-import time
-import threading
-from Divers import fonction_principal, Fct_script
-from Divers import Class_bot
-from datetime import datetime
 
-import tkinter as tk
-from tkinter import filedialog
+from Divers import Class_bot
+from Divers import fonction_principal, Fct_script
 
 
 class App(QWidget):
@@ -22,10 +23,11 @@ class App(QWidget):
         self.top = 60
         self.width = 700
         self.height = 480
-        self.dictoZaap = {'Village des Eleveurs': 0}
+        self.dictoZaap = {}
         self.listPath = []
         self.initUI()
         self.Pause = [False]
+        self.kill_bot = False
 
     def initUI(self):
         self.setWindowTitle(self.title)
@@ -66,6 +68,10 @@ class App(QWidget):
         self.LanceDofus.setGeometry(20, 370, 300, 30)
         self.LanceDofus.setChecked(True)
 
+        self.ProprietaireMaison = QCheckBox('Proprietaire de la maison', self)
+        self.ProprietaireMaison.setGeometry(20, 400, 300, 30)
+        self.ProprietaireMaison.setChecked(True)
+
         self.ZaapLabel = QLabel('Zaap a mettre en favorie:', self)
         self.ZaapLabel.setGeometry(420, 20, 180, 20)
         self.Zaap = QTextEdit(self)
@@ -94,24 +100,31 @@ class App(QWidget):
         Log_message.write('Le bot a ete lance a {}'.format(time_start_log))
         Log_message.close()
         option = Class_bot.Optionbot()
+        option.proprietairemaison = self.ProprietaireMaison.isChecked()
+        self.kill_bot = False
         if self.LanceDofus.isChecked():
             fonction_principal.ouverture_dofus(option, text_name)
         while True:
             for i in self.listPath:
                 script = Fct_script.lire_path(i)
                 action, Dicto_ressource, Dicto_Caverne = Fct_script.lire_script(script)
-                fonction_principal.Banque(self.dictoZaap, option, pause=self.Pause)
-                script_executer = Class_bot.BotScript(action, Dicto_ressource, self.dictoZaap, Dicto_Caverne, option,
-                                                      self.Pause)
-                script_executer.run_all_action()
-                del script_executer
-                if start_time + duration < time.time():
+                videerreur = fonction_principal.VidePod(self.dictoZaap, option, pause=self.Pause)
+                if videerreur == 1:
+                    self.kill_bot = True
+                else:
+                    script_executer = Class_bot.BotScript(action, Dicto_ressource, self.dictoZaap, Dicto_Caverne,
+                                                          option,
+                                                          self.Pause)
+                    script_erreur = script_executer.run_all_action()
+                    if script_erreur == 1:
+                        self.kill_bot = True
+                    del script_executer
+                if (start_time + duration < time.time()) or self.kill_bot:
                     break
             else:
                 continue
             break
         fonction_principal.kill_dofus(option, restart=False, commentaire='le script a ete execute sans erreur')
-        # listener.stop()
         self.Resumebutton.setEnabled(False)
         self.Pausebutton.setEnabled(False)
         self.Runbutton.setEnabled(True)

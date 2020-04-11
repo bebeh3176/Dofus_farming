@@ -13,11 +13,15 @@ class BotScript:
         self.num_carte_caverne = 0
         self.pos_caverne = (0, 0)
         self.script_fini = False
+        self.kill_bot = False
 
 
     def run_all_action(self):
         while not(self.script_fini):
             self.run_one_action()
+            if self.kill_bot:
+                return 1
+        return 0
 
     def run_one_action(self):
         Action = self.liste_Action[self.action_actuelle]
@@ -41,7 +45,11 @@ class BotScript:
                     self.script_fini = True
                     return
                 else:
-                    self.num_carte_caverne = num_carte
+                    if num_carte == 2000000:
+                        self.kill_bot = True
+                        return
+                    else:
+                        self.num_carte_caverne = num_carte
             else:
                 pos = Action[6:].split(', ')
                 NbSauf = int((len(pos) - 3) / 6)
@@ -60,6 +68,9 @@ class BotScript:
                             self.action_actuelle = ind_act
                             return
                     self.script_fini = True
+                    return
+                if test == 2:
+                    self.kill_bot = True
                     return
         if Action[0:6] == 'Sortie':
             self.bool_caverne = False
@@ -81,13 +92,22 @@ class BotScript:
                 return
         if Action[0:5] == 'Check':
             if self.bool_caverne:
-                Fct.ressource(self.Dicto_Caverne[self.pos_caverne][3][self.num_carte_caverne], self.option, pause=self.pause)
+                test = Fct.ressource(self.Dicto_Caverne[self.pos_caverne][3][self.num_carte_caverne], self.option, pause=self.pause)
+                if test == 1:
+                    self.kill_bot = True
+                    return
             else:
                 now = tuple(Fct.MAP_POS())
                 if now in self.Dicto_ressource:
-                    Fct.ressource(self.Dicto_ressource[now], self.option, pause=self.pause)
+                    test = Fct.ressource(self.Dicto_ressource[now], self.option, pause=self.pause)
+                    if test == 1:
+                        self.kill_bot = True
+                        return
         if Action[0:4] == 'Zaap':
-            Fct.zaap(Action[5:], self.Dicto_Zaap, self.option, pause=self.pause)
+            test = Fct.zaap(Action[5:], self.Dicto_Zaap, self.option, pause=self.pause)
+            if test == 1:
+                self.kill_bot = True
+                return
 
         self.action_actuelle = self.action_actuelle + 1
         if self.action_actuelle == len(self.liste_Action):
@@ -99,3 +119,8 @@ class Optionbot:
         self.pm = 3
         self.po = 11
         self.motDePasse = 'darkside94'
+        # self.EmplacementViderPod = 'Banque'
+        self.EmplacementViderPod = 'Maison'
+        self.proprietairemaison = True
+        self.codemaison = '8412251'
+        self.codecoffre = '8632125'
