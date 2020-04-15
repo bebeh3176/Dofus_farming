@@ -108,13 +108,12 @@ class App(QWidget):
             for i in self.listPath:
                 script = Fct_script.lire_path(i)
                 action, Dicto_ressource, Dicto_Caverne = Fct_script.lire_script(script)
-                videerreur = fonction_principal.VidePod(self.dictoZaap, option, pause=self.Pause)
+                videerreur = fonction_principal.VidePod(self.dictoZaap, option, pause=self.Pause, baspourcentage=True)
                 if videerreur == 1:
                     self.kill_bot = True
                 else:
                     script_executer = Class_bot.BotScript(action, Dicto_ressource, self.dictoZaap, Dicto_Caverne,
-                                                          option,
-                                                          self.Pause)
+                                                          option, self.Pause)
                     script_erreur = script_executer.run_all_action()
                     if script_erreur == 1:
                         self.kill_bot = True
@@ -147,22 +146,19 @@ class App(QWidget):
 
     # @pyqtSlot()
     def Load_click(self):
-        try:
-            root = tk.Tk()
-            root.withdraw()
-            path = filedialog.askopenfilename()
+        root = tk.Tk()
+        root.withdraw()
+        path = filedialog.askopenfilename()
+        if len(path) != 0:
             self.listPath.append(path)
             script = Fct_script.lire_path(path)
-        except:
-            return
-        nom = Fct_script.lire_nom(script)
-        self.Script.append(nom)
-        print(self.dictoZaap.keys())
-        listZaap = Fct_script.lire_zaap(script, list(self.dictoZaap.keys()))
-        self.dictoZaap = Fct_script.list2dicto_Zaap(listZaap)
-        self.Zaap.clear()
-        for i in list(self.dictoZaap.keys()):
-            self.Zaap.append(i)
+            nom = Fct_script.lire_nom(script)
+            self.Script.append(nom)
+            listZaap = Fct_script.lire_zaap(script, list(self.dictoZaap.keys()))
+            self.dictoZaap = Fct_script.list2dicto_Zaap(listZaap)
+            self.Zaap.clear()
+            for i in list(self.dictoZaap.keys()):
+                self.Zaap.append(i)
 
     def Faire_Pause(self, key):
         try:

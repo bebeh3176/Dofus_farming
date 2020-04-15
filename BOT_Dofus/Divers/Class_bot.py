@@ -19,6 +19,11 @@ class BotScript:
     def run_all_action(self):
         while not(self.script_fini):
             self.run_one_action()
+            videerreur = Fct.VidePod(self.Dicto_Zaap, self.option, pause=self.pause, baspourcentage=False)
+            if videerreur == 1: # VidePod a subis une erreur
+                return 1
+            if videerreur == 0: #le bot a ete se vider dans le milieu d'une run, saute a la prochaine run
+                self.script_fini = True
             if self.kill_bot:
                 return 1
         return 0

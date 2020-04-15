@@ -55,17 +55,29 @@ def Level_Up(pause=[False]):
 
 
 def GoHavreSac(option, entre=True, pause=[False]):
+    potion_rappel = True
     if(entre):
         compteur = 0
         while True:
             compteur = compteur + 1
             if compteur == 5:
-                kill_test = kill_dofus(option, restart=True, commentaire='bug en rentrant dans l havreSac')
-                if kill_test == 1:
-                    return 1
+                if potion_rappel:
+                    potion_rappel = False
+                    divers.move_mouse(809, 641, 13, 14, Click=2, pause=pause)
+                    compteur = 3
+                else:
+                    kill_test = kill_dofus(option, restart=True, commentaire='1er bug en rentrant dans l havreSac')
+                    potion_rappel = True
+                    if kill_test == 1:
+                        return 1
             if compteur == 10:
-                kill_dofus(option, restart=False, commentaire='bug en rentrant dans l havreSac')
-                return 1
+                if potion_rappel:
+                    potion_rappel = False
+                    divers.move_mouse(809, 641, 13, 14, Click=2, pause=pause)
+                    compteur = 8
+                else:
+                    kill_dofus(option, restart=False, commentaire='2e bug en rentrant dans l havreSac, donc kill')
+                    return 1
             divers.move_mouse(875, 683, 14, 15, pause=pause)
             time.sleep(0.5 + random.random() * 0.5)
             for i in range(0, 15):
@@ -142,12 +154,16 @@ def zaap(destination, dictozaap, option, pause=[False], retry=True):
     time.sleep(5.8+random.random()*0.5)
     return 0
 
-def VidePod(dictozaap, option, pause=[False]):
+
+def VidePod(dictozaap, option, pause=[False], baspourcentage=True):
     now = pyautogui.screenshot()
-    color = now.getpixel((818, 698))
+    if baspourcentage:
+        color = now.getpixel((786, 698))
+    else:
+        color = now.getpixel((825, 698))
     colorECH = (96, 190, 53)
     test = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (color[2] - colorECH[2]) ** 2) <= 4
-    videerror = 0
+    videerror = 2
     if test:
         if option.EmplacementViderPod == 'Banque':
             videerror = Banque(dictozaap, option, pause)
@@ -302,7 +318,7 @@ def GotoMaison(dictozaap, option, pause=[False]):
         else:
             continue
         break
-    return
+    return 0
 
 def Banque(dictozaap, option, pause=[False]):
     zaap_erreur = zaap('Village des Eleveurs', dictozaap, option, pause=pause)

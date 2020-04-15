@@ -19,19 +19,9 @@ def detectclick():
     x, y = pyautogui.position()
     im = pyautogui.screenshot()
     couleur = im.getpixel((x, y))
-    return x,y,couleur
+    return x, y, couleur
 
 for i in range(7):
     x, y, couleur = detectclick()
-    x, y, couleur = detectclick()
-    print('position, {0}, {1}, couleur, {2}, {3}, {4}'.format(x,y,couleur[0],couleur[1],couleur[2]))
-
-
-
-
-
-
-
-
-
+    print('position, {0}, {1}, couleur, {2}, {3}, {4}'.format(x, y, couleur[0], couleur[1], couleur[2]))
 
