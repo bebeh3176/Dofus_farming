@@ -1,4 +1,0 @@
-bug durant la prise dun zaap premiere essaie
-attempt number 0
-connecter a laide du mot de passe
-reussite

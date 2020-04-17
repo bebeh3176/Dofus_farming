@@ -86,6 +86,8 @@ Go to -12, -59
 Check ressource
 Go to -11, -59
 Check ressource
+Go to -11, -58
+Check ressource
 fin Action
 
 Zaap
@@ -310,6 +312,14 @@ map -11, -59
 ressource position, 421, 316, couleur, 25, 58, 4
 ressource position, 525, 522, couleur, 48, 60, 2
 ressource position, 642, 117, couleur, 160, 133, 23
+map -11, -58
+ressource position, 927, 87, couleur, 102, 88, 45
+ressource position, 508, 105, couleur, 35, 31, 13
+ressource position, 642, 214, couleur, 96, 106, 0
+ressource position, 810, 332, couleur, 71, 104, 5
+ressource position, 505, 527, couleur, 24, 55, 4
+ressource position, 486, 416, couleur, 101, 108, 15
+ressource position, 835, 512, couleur, 90, 36, 19
 fin Ressource
 
 final

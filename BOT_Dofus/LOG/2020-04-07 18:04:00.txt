@@ -1,5 +1,0 @@
-Ne se reconnait pas dans la caverne
-attempt number 0
-attempt number 1
-attempt number 2
-fermeture apres 3 essaie

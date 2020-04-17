@@ -1,4 +1,0 @@
-Ne se reconnait pas dans la caverne
-attempt number 0
-connecter a laide du mot de passe
-reussite

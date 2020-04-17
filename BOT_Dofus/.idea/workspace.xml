@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9b2a868c-6a51-4fd2-af5c-281e4fddd0b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bot_Dofus.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_Dofus.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CLICK.py" beforeDir="false" afterPath="$PROJECT_DIR$/CLICK.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Divers/Class_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Divers/Class_bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Divers/Combat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Divers/Combat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Divers/fonction_principal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Divers/fonction_principal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ressource_format.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ressource_format.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Bois_de_litneg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Bois_de_litneg_lvl130.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +50,7 @@
       <recent name="D:\Documents\BOT_Dofus" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Bot_Dofus">
+  <component name="RunManager" selected="Python.Ressource_format">
     <configuration name="Bot_Dofus" type="PythonConfigurationType" factoryName="Python">
       <module name="BOT_Dofus" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -96,27 +93,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Caverne_format" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="BOT_Dofus" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Caverne_format.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Fct_script" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BOT_Dofus" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -130,6 +106,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Divers/Fct_script.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Ressource_format" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BOT_Dofus" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ressource_format.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -182,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Ressource_format" />
         <item itemvalue="Python.CLICK" />
         <item itemvalue="Python.TEST" />
         <item itemvalue="Python.fonction_principal" />
         <item itemvalue="Python.Fct_script" />
-        <item itemvalue="Python.Caverne_format" />
       </list>
     </recent_temporary>
   </component>
@@ -216,22 +213,22 @@
       <screen x="0" y="27" width="1280" height="676" />
     </state>
     <state x="179" y="27" width="912" height="676" key="CommitChangelistDialog2/0.27.1280.676@0.27.1280.676" timestamp="1586550756309" />
-    <state width="1257" height="179" key="GridCell.Tab.0.bottom" timestamp="1586986507076">
+    <state width="1257" height="234" key="GridCell.Tab.0.bottom" timestamp="1587137337557">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="179" key="GridCell.Tab.0.bottom/0.27.1280.676@0.27.1280.676" timestamp="1586986507076" />
-    <state width="1257" height="179" key="GridCell.Tab.0.center" timestamp="1586986507075">
+    <state width="1257" height="234" key="GridCell.Tab.0.bottom/0.27.1280.676@0.27.1280.676" timestamp="1587137337557" />
+    <state width="1257" height="234" key="GridCell.Tab.0.center" timestamp="1587137337557">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="179" key="GridCell.Tab.0.center/0.27.1280.676@0.27.1280.676" timestamp="1586986507075" />
-    <state width="1257" height="179" key="GridCell.Tab.0.left" timestamp="1586986507075">
+    <state width="1257" height="234" key="GridCell.Tab.0.center/0.27.1280.676@0.27.1280.676" timestamp="1587137337557" />
+    <state width="1257" height="234" key="GridCell.Tab.0.left" timestamp="1587137337555">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="179" key="GridCell.Tab.0.left/0.27.1280.676@0.27.1280.676" timestamp="1586986507075" />
-    <state width="1257" height="179" key="GridCell.Tab.0.right" timestamp="1586986507075">
+    <state width="1257" height="234" key="GridCell.Tab.0.left/0.27.1280.676@0.27.1280.676" timestamp="1587137337555" />
+    <state width="1257" height="234" key="GridCell.Tab.0.right" timestamp="1587137337557">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="179" key="GridCell.Tab.0.right/0.27.1280.676@0.27.1280.676" timestamp="1586986507075" />
+    <state width="1257" height="234" key="GridCell.Tab.0.right/0.27.1280.676@0.27.1280.676" timestamp="1587137337557" />
     <state width="1257" height="179" key="GridCell.Tab.1.bottom" timestamp="1586986507077">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
@@ -248,10 +245,10 @@
       <screen x="0" y="27" width="1280" height="676" />
     </state>
     <state width="1257" height="179" key="GridCell.Tab.1.right/0.27.1280.676@0.27.1280.676" timestamp="1586986507076" />
-    <state x="380" y="27" width="510" height="676" key="RollbackChangesDialog" timestamp="1581397085790">
+    <state x="380" y="27" width="510" height="676" key="RollbackChangesDialog" timestamp="1587090661344">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state x="380" y="27" width="510" height="676" key="RollbackChangesDialog/0.27.1280.676@0.27.1280.676" timestamp="1581397085790" />
+    <state x="380" y="27" width="510" height="676" key="RollbackChangesDialog/0.27.1280.676@0.27.1280.676" timestamp="1587090661344" />
     <state x="318" y="173" key="com.intellij.ide.util.TipDialog" timestamp="1583976795485">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
