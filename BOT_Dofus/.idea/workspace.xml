@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9b2a868c-6a51-4fd2-af5c-281e4fddd0b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ressource_format.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ressource_format.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Bois_de_litneg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Bois_de_litneg_lvl130.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Bois_de_litneg_lvl130.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Bois_de_litneg_lvl130.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,15 +29,17 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Divers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Scripts" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Scripts" />
       <recent name="$PROJECT_DIR$/Divers" />
       <recent name="$PROJECT_DIR$/Picture" />
       <recent name="D:\Documents\BOT_Dofus" />
@@ -201,6 +202,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="341" y="166" width="587" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587707349623">
+      <screen x="0" y="27" width="1280" height="676" />
+    </state>
+    <state x="341" y="166" width="587" height="396" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1280.676@0.27.1280.676" timestamp="1587707349623" />
     <state x="373" y="113" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581805483518">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
@@ -213,22 +218,22 @@
       <screen x="0" y="27" width="1280" height="676" />
     </state>
     <state x="179" y="27" width="912" height="676" key="CommitChangelistDialog2/0.27.1280.676@0.27.1280.676" timestamp="1586550756309" />
-    <state width="1257" height="234" key="GridCell.Tab.0.bottom" timestamp="1587137337557">
+    <state width="1257" height="234" key="GridCell.Tab.0.bottom" timestamp="1587875867097">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="234" key="GridCell.Tab.0.bottom/0.27.1280.676@0.27.1280.676" timestamp="1587137337557" />
-    <state width="1257" height="234" key="GridCell.Tab.0.center" timestamp="1587137337557">
+    <state width="1257" height="234" key="GridCell.Tab.0.bottom/0.27.1280.676@0.27.1280.676" timestamp="1587875867097" />
+    <state width="1257" height="234" key="GridCell.Tab.0.center" timestamp="1587875867096">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="234" key="GridCell.Tab.0.center/0.27.1280.676@0.27.1280.676" timestamp="1587137337557" />
-    <state width="1257" height="234" key="GridCell.Tab.0.left" timestamp="1587137337555">
+    <state width="1257" height="234" key="GridCell.Tab.0.center/0.27.1280.676@0.27.1280.676" timestamp="1587875867096" />
+    <state width="1257" height="234" key="GridCell.Tab.0.left" timestamp="1587875867096">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="234" key="GridCell.Tab.0.left/0.27.1280.676@0.27.1280.676" timestamp="1587137337555" />
-    <state width="1257" height="234" key="GridCell.Tab.0.right" timestamp="1587137337557">
+    <state width="1257" height="234" key="GridCell.Tab.0.left/0.27.1280.676@0.27.1280.676" timestamp="1587875867096" />
+    <state width="1257" height="234" key="GridCell.Tab.0.right" timestamp="1587875867097">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="234" key="GridCell.Tab.0.right/0.27.1280.676@0.27.1280.676" timestamp="1587137337557" />
+    <state width="1257" height="234" key="GridCell.Tab.0.right/0.27.1280.676@0.27.1280.676" timestamp="1587875867097" />
     <state width="1257" height="179" key="GridCell.Tab.1.bottom" timestamp="1586986507077">
       <screen x="0" y="27" width="1280" height="676" />
     </state>

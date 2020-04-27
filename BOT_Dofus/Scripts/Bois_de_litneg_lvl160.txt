@@ -124,21 +124,38 @@ ressource position, 891, 516, couleur, 147, 163, 32
 ressource position, 520, 184, couleur, 218, 161, 16
 ressource position, 826, 92, couleur, 67, 64, 20
 map -13, -48
+ressource position, 857, 517, couleur, 77, 86, 20
 ressource position, 274, 149, couleur, 126, 102, 13
 ressource position, 289, 453, couleur, 41, 75, 13
 ressource position, 510, 399, couleur, 52, 103, 7
 ressource position, 961, 325, couleur, 205, 117, 8
+map -13, -47
+ressource position, 969, 405, couleur, 147, 152, 33
+ressource position, 472, 517, couleur, 55, 36, 0
+ressource position, 267, 347, couleur, 130, 88, 11
+map -12, -47
+ressource position, 879, 531, couleur, 90, 58, 2
+ressource position, 595, 183, couleur, 255, 211, 174
+ressource position, 731, 218, couleur, 45, 89, 6
+ressource position, 343, 89, couleur, 58, 82, 8
+ressource position, 271, 107, couleur, 159, 135, 28
+ressource position, 331, 408, couleur, 103, 80, 5
 map -12, -48
+ressource position, 621, 170, couleur, 228, 190, 153
 ressource position, 429, 262, couleur, 54, 45, 11
 ressource position, 479, 127, couleur, 147, 124, 53
 ressource position, 563, 469, couleur, 40, 91, 4
 ressource position, 920, 497, couleur, 83, 33, 16
+ressource position, 935, 252, couleur, 86, 54, 2
 map -12, -49
+ressource position, 650, 492, couleur, 252, 218, 167
 ressource position, 275, 483, couleur, 58, 92, 4
 ressource position, 317, 184, couleur, 91, 89, 26
 ressource position, 520, 128, couleur, 148, 117, 11
+ressource position, 960, 86, couleur, 177, 152, 112
 map -15, -49
 ressource position, 295, 89, couleur, 176, 149, 31
+ressource position, 487, 279, couleur, 83, 53, 2
 ressource position, 890, 94, couleur, 124, 131, 27
 ressource position, 914, 259, couleur, 172, 147, 31
 ressource position, 808, 327, couleur, 78, 32, 18
@@ -149,7 +166,9 @@ ressource position, 931, 233, couleur, 130, 101, 7
 ressource position, 973, 442, couleur, 126, 141, 34
 ressource position, 526, 446, couleur, 129, 147, 34
 ressource position, 499, 92, couleur, 89, 36, 18
-ressource position, 279, 104, couleur, 142, 165, 41
+ressource position, 605, 167, couleur, 158, 161, 30
+ressource position, 488, 446, couleur, 112, 128, 25
+ressource position, 279, 97, couleur, 170, 185, 45
 map -14, -50
 ressource position, 947, 539, couleur, 37, 57, 3
 ressource position, 335, 538, couleur, 35, 60, 2
@@ -164,6 +183,7 @@ ressource position, 372, 510, couleur, 28, 45, 2
 ressource position, 373, 175, couleur, 53, 112, 0
 map -13, -49
 ressource position, 841, 472, couleur, 80, 111, 6
+ressource position, 880, 317, couleur, 244, 194, 162
 ressource position, 468, 484, couleur, 121, 125, 26
 ressource position, 328, 315, couleur, 145, 63, 35
 ressource position, 282, 130, couleur, 135, 106, 62
@@ -183,6 +203,7 @@ ressource position, 549, 120, couleur, 81, 123, 30
 map -12, -51
 ressource position, 842, 524, couleur, 87, 68, 37
 ressource position, 333, 504, couleur, 129, 80, 5
+ressource position, 369, 240, couleur, 201, 177, 136
 ressource position, 584, 393, couleur, 168, 128, 10
 ressource position, 556, 82, couleur, 75, 82, 15
 map -13, -51
@@ -192,6 +213,7 @@ ressource position, 694, 471, couleur, 96, 37, 18
 ressource position, 402, 502, couleur, 52, 37, 16
 ressource position, 372, 222, couleur, 186, 146, 27
 ressource position, 471, 170, couleur, 176, 175, 34
+ressource position, 641, 151, couleur, 90, 54, 0
 map -14, -51
 ressource position, 986, 460, couleur, 94, 106, 0
 ressource position, 310, 435, couleur, 109, 113, 17
@@ -207,6 +229,7 @@ ressource position, 331, 78, couleur, 136, 112, 21
 map -12, -52
 ressource position, 270, 215, couleur, 73, 96, 6
 map -14, -52
+ressource position, 836, 154, couleur, 183, 182, 39
 ressource position, 953, 238, couleur, 20, 35, 2
 ressource position, 947, 467, couleur, 76, 61, 5
 ressource position, 835, 536, couleur, 44, 61, 3
@@ -245,6 +268,7 @@ ressource position, 704, 158, couleur, 228, 210, 146
 ressource position, 1007, 93, couleur, 65, 99, 4
 map -12, -54
 ressource position, 621, 338, couleur, 255, 226, 167
+ressource position, 684, 294, couleur, 89, 55, 2
 ressource position, 895, 437, couleur, 163, 110, 10
 ressource position, 914, 103, couleur, 186, 141, 12
 ressource position, 852, 83, couleur, 88, 86, 14
@@ -274,6 +298,7 @@ ressource position, 1002, 175, couleur, 65, 32, 14
 ressource position, 428, 152, couleur, 41, 27, 7
 map -15, -54
 ressource position, 891, 493, couleur, 105, 82, 8
+ressource position, 914, 237, couleur, 110, 120, 25
 ressource position, 384, 359, couleur, 105, 136, 10
 ressource position, 608, 146, couleur, 130, 54, 34
 ressource position, 355, 103, couleur, 142, 57, 33
@@ -299,6 +324,7 @@ ressource position, 787, 111, couleur, 90, 82, 36
 map -13, -57
 ressource position, 427, 467, couleur, 116, 127, 34
 ressource position, 551, 494, couleur, 128, 110, 23
+ressource position, 689, 321, couleur, 169, 171, 33
 ressource position, 951, 395, couleur, 168, 161, 34
 ressource position, 343, 128, couleur, 186, 108, 11
 ressource position, 805, 121, couleur, 154, 88, 11
@@ -313,6 +339,7 @@ ressource position, 491, 143, couleur, 200, 147, 13
 ressource position, 893, 231, couleur, 58, 87, 4
 map -14, -58
 ressource position, 835, 146, couleur, 74, 31, 14
+ressource position, 1019, 238, couleur, 72, 46, 0
 ressource position, 330, 201, couleur, 170, 158, 32
 ressource position, 425, 99, couleur, 135, 142, 28
 map -15, -58
@@ -331,6 +358,7 @@ ressource position, 420, 171, couleur, 105, 89, 45
 ressource position, 789, 130, couleur, 49, 44, 21
 ressource position, 953, 99, couleur, 48, 60, 16
 map -14, -59
+ressource position, 850, 98, couleur, 80, 50, 1
 ressource position, 286, 193, couleur, 131, 103, 8
 ressource position, 387, 474, couleur, 122, 77, 9
 ressource position, 928, 546, couleur, 78, 100, 14
@@ -360,6 +388,12 @@ ressource position, 810, 332, couleur, 71, 104, 5
 ressource position, 505, 527, couleur, 24, 55, 4
 ressource position, 486, 416, couleur, 101, 108, 15
 ressource position, 835, 512, couleur, 90, 36, 19
+map -11, -57
+ressource position, 987, 99, couleur, 202, 182, 132
+ressource position, 649, 123, couleur, 135, 155, 0
+ressource position, 466, 475, couleur, 56, 45, 2
+ressource position, 929, 432, couleur, 162, 178, 0
+ressource position, 305, 82, couleur, 168, 133, 42
 fin Ressource
 
 final

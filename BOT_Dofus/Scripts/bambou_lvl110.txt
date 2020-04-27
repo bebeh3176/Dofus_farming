@@ -1,0 +1,209 @@
+Bambou pandala
+
+Action
+Zaap Faubourgs de Pandala
+Go to 27, -37
+Check ressource
+Go to 28, -37
+Check ressource
+Go to 28, -36
+Check ressource
+Go to 27, -36
+Check ressource
+Go to 27, -35
+Check ressource
+Go to 28, -35
+Check ressource
+Go to 28, -34
+Check ressource
+Go to 27, -34
+Check ressource
+Go to 26, -34
+Check ressource
+Go to 26, -33
+Check ressource
+Go to 27, -33
+Check ressource
+Go to 28, -33
+Check ressource
+Go to 29, -33
+Check ressource
+Go to 29, -32
+Check ressource
+Go to 28, -32
+Check ressource
+Go to 27, -32
+Check ressource
+Go to 27, -31
+Check ressource
+Go to 27, -30
+Check ressource
+Go to 27, -29
+Check ressource
+Go to 26, -29
+Check ressource
+Go to 26, -28
+Check ressource
+Go to 26, -27
+Check ressource
+Go to 25, -27
+Check ressource
+Go to 25, -28
+Check ressource
+Go to 25, -29
+Check ressource
+Go to 24, -29
+Check ressource
+Go to 24, -28
+Check ressource
+Go to 23, -28
+Check ressource
+Go to 24, -29
+Check ressource
+Go to 23, -29
+Check ressource
+Go to 22, -29
+Check ressource
+Go to 22, -28
+Check ressource
+Go to 21, -28
+Check ressource
+Go to 21, -29
+Check ressource
+Go to 21, -30
+Check ressource
+Go to 21, -31
+Check ressource
+Go to 20, -31
+Check ressource
+Go to 20, -32
+Check ressource
+Go to 20, -33
+Check ressource
+Go to 19, -33
+Check ressource
+Go to 21, -33
+Check ressource
+Go to 21, -34
+Check ressource
+Go to 20, -34
+Check ressource
+Go to 20, -35
+Check ressource
+Go to 20, -35
+Check ressource
+Go to 20, -36
+Check ressource
+Go to 20, -37
+Check ressource
+Go to 20, -38
+Check ressource
+Go to 19, -38
+Check ressource
+Go to 18, -38
+Check ressource
+Go to 18, -37
+Check ressource
+Go to 17, -37
+Check ressource
+fin Action
+
+Zaap
+Faubourgs de Pandala
+Bonta Centre-ville
+fin Zaap
+
+Ressource
+map 27, -37
+ressource position, 664, 364, couleur, 67, 72, 31
+map 28, -37
+ressource position, 494, 280, couleur, 84, 90, 24
+map 27, -36
+ressource position, 915, 238, couleur, 68, 73, 21
+ressource position, 493, 503, couleur, 147, 151, 91
+map 27, -35
+ressource position, 662, 252, couleur, 94, 102, 28
+map 28, -35
+ressource position, 859, 295, couleur, 151, 159, 97
+map 27, -34
+ressource position, 774, 224, couleur, 117, 126, 42
+map 26, -34
+ressource position, 438, 336, couleur, 113, 122, 34
+map 26, -33
+ressource position, 859, 183, couleur, 107, 115, 34
+map 27, -33
+ressource position, 858, 295, couleur, 143, 151, 93
+map 28, -33
+ressource position, 942, 420, couleur, 107, 115, 34
+map 29, -33
+ressource position, 578, 97, couleur, 127, 134, 79
+map 28, -32
+ressource position, 494, 504, couleur, 136, 145, 73
+map 27, -31
+ressource position, 325, 337, couleur, 106, 114, 33
+map 26, -30
+ressource position, 578, 462, couleur, 128, 136, 63
+map 26, -29
+ressource position, 660, 447, couleur, 161, 165, 83
+map 26, -28
+ressource position, 577, 238, couleur, 132, 143, 53
+ressource position, 522, 378, couleur, 119, 128, 44
+ressource position, 746, 519, couleur, 109, 117, 32
+map 26, -27
+ressource position, 549, 167, couleur, 140, 145, 62
+map 25, -27
+ressource position, 380, 391, couleur, 176, 177, 94
+map 25, -28
+ressource position, 718, 476, couleur, 119, 128, 45
+map 25, -29
+ressource position, 633, 237, couleur, 143, 148, 62
+map 24, -29
+ressource position, 774, 308, couleur, 125, 135, 61
+map 24, -28
+ressource position, 354, 350, couleur, 108, 116, 33
+map 23, -28
+ressource position, 353, 294, couleur, 108, 116, 35
+map 23, -29
+ressource position, 466, 376, couleur, 118, 122, 60
+map 22, -29
+ressource position, 438, 336, couleur, 113, 122, 34
+map 22, -28
+ressource position, 577, 293, couleur, 148, 152, 65
+map 21, -28
+ressource position, 747, 462, couleur, 115, 123, 34
+ressource position, 465, 124, couleur, 136, 143, 89
+map 21, -29
+ressource position, 464, 264, couleur, 158, 164, 65
+map 21, -30
+ressource position, 493, 167, couleur, 138, 143, 61
+map 21, -31
+ressource position, 803, 405, couleur, 106, 115, 32
+ressource position, 858, 97, couleur, 104, 109, 55
+map 20, -31
+ressource position, 578, 293, couleur, 116, 124, 37
+map 19, -31
+ressource position, 781, 255, couleur, 116, 120, 45
+map 20, -32
+ressource position, 858, 124, couleur, 136, 139, 72
+map 20, -33
+ressource position, 391, 421, couleur, 125, 135, 55
+map 19, -33
+ressource position, 307, 517, couleur, 109, 105, 60
+map 20, -34
+ressource position, 690, 291, couleur, 113, 122, 58
+map 20, -35
+ressource position, 971, 125, couleur, 87, 91, 41
+map 20, -36
+ressource position, 494, 420, couleur, 124, 132, 54
+map 20, -37
+ressource position, 605, 139, couleur, 135, 141, 74
+map 19, -38
+ressource position, 775, 365, couleur, 113, 126, 51
+map 18, -38
+ressource position, 776, 197, couleur, 113, 122, 34
+ressource position, 354, 266, couleur, 107, 115, 32
+map 17, -37
+ressource position, 662, 168, couleur, 107, 115, 33
+fin Ressource
+
+final
