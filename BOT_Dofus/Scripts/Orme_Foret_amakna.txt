@@ -1,0 +1,41 @@
+Orme Foret amakna
+
+Action
+Zaap Bord de la foret malefique
+Go to 4, 11
+Check ressource
+Go to 5, 18
+Check ressource
+Go to 6, 18
+Check ressource
+Go to 4, 18
+Check ressource
+Go to 4, 17
+Check ressource
+Go to 4, 16
+Check ressource
+fin Action
+
+Zaap
+Bord de la foret malefique
+Bonta Centre-ville
+fin Zaap
+
+Ressource
+map 4, 11
+ressource position, 408, 146, couleur, 236, 238, 60
+map 5, 18
+ressource position, 306, 447, couleur, 82, 69, 20
+map 6, 18
+ressource position, 910, 502, couleur, 213, 115, 17
+map 4, 18
+ressource position, 854, 474, couleur, 213, 115, 17
+map 4, 17
+ressource position, 938, 404, couleur, 213, 115, 17
+ressource position, 334, 348, couleur, 82, 69, 20
+map 4, 16
+ressource position, 890, 402, couleur, 147, 150, 33
+ressource position, 474, 279, couleur, 82, 69, 20
+fin Ressource
+
+final

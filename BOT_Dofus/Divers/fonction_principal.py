@@ -169,6 +169,13 @@ def VidePod(dictozaap, option, pause=[False], baspourcentage=True):
             videerror = Banque(dictozaap, option, pause)
         if option.EmplacementViderPod == 'Maison':
             videerror = GotoMaison(dictozaap, option, pause)
+            if videerror == 2:
+                kill_test = kill_dofus(option, restart=True, commentaire='Erreur survenur en allant se vider dans la maison')
+                if kill_test == 1:
+                    return 1
+                videerror = GotoMaison(dictozaap, option, pause)
+                if 0 < videerror:
+                    return 1
     return videerror
 
 def GotoMaison(dictozaap, option, pause=[False]):
@@ -179,7 +186,7 @@ def GotoMaison(dictozaap, option, pause=[False]):
     Go_to_POS([-30, -52], option)
     # Click sur maison et click sur rentre
     if option.proprietairemaison:
-        while True:
+        for j in range(0, 5):
             Validation_erreur = Validation(option, pause=pause)
             if Validation_erreur == 1:
                 return 1
@@ -202,8 +209,11 @@ def GotoMaison(dictozaap, option, pause=[False]):
             else:
                 continue
             break
+        else:
+            return 2
+
     else:
-        while True:
+        for j in range(0, 5):
             Validation_erreur = Validation(option, pause=pause)
             if Validation_erreur == 1:
                 return 1
@@ -225,8 +235,10 @@ def GotoMaison(dictozaap, option, pause=[False]):
             else:
                 continue
             break
+        else:
+            return 2
     # monte d'un etage
-    while True:
+    for j in range(0, 5):
         Validation_erreur = Validation(option, pause=pause)
         if Validation_erreur == 1:
             return 1
@@ -243,9 +255,11 @@ def GotoMaison(dictozaap, option, pause=[False]):
         else:
             continue
         break
+    else:
+        return 2
     #click sur coffre et click ouvre
     if option.proprietairemaison:
-        while True:
+        for j in range(0, 5):
             Validation_erreur = Validation(option, pause=pause)
             if Validation_erreur == 1:
                 return 1
@@ -268,8 +282,10 @@ def GotoMaison(dictozaap, option, pause=[False]):
             else:
                 continue
             break
+        else:
+            return 2
     else:
-        while True:
+        for j in range(0, 5):
             Validation_erreur = Validation(option, pause=pause)
             if Validation_erreur == 1:
                 return 1
@@ -291,6 +307,8 @@ def GotoMaison(dictozaap, option, pause=[False]):
             else:
                 continue
             break
+        else:
+            return 2
 
     # transfert des shits
     posx = 834 + int(random.random() * 6)
@@ -301,7 +319,7 @@ def GotoMaison(dictozaap, option, pause=[False]):
     posy = posy + 35 + int(random.random() * 8)
     divers.move_mouse(posx, posy, 0, 0)
     # fermer coffre
-    while True:
+    for j in range(0, 5):
         Validation_erreur = Validation(option, pause=pause)
         if Validation_erreur == 1:
             return 1
@@ -318,6 +336,8 @@ def GotoMaison(dictozaap, option, pause=[False]):
         else:
             continue
         break
+    else:
+        return 2
     return 0
 
 def Banque(dictozaap, option, pause=[False]):
@@ -535,6 +555,7 @@ def Defi(option, pause=[False]):
 
 def Validation(option, pause=[False]):
     combat.combat(option, pause=pause)
+    combat.click_combat_fini(pause=pause)
     Defi_test = Defi(option, pause=pause)
     if Defi_test == 1:
         return 1
@@ -600,11 +621,11 @@ def MAP_POS(TEST=False):
                 if(virgule == 1) & TEST:
                     return True
     except:
-        posnom = [0, 0]
+        posnom = [-200, -200]
         if(TEST):
             return False
-    if posnom == []:
-        posnom = [0, 0]
+    if ((posnom == []) or (virgule != 2)):
+        posnom = [-200, -200]
         if (TEST):
             return False
     return posnom
@@ -624,6 +645,9 @@ def isBlack():
 
 
 def ressource(dicto, option, pause=[False]):
+    nombremaxressource = len(dicto) + 5
+    retry = True
+    nombreressource = 0
     while True:
         action = True
         Validation_erreur = Validation(option, pause=pause)
@@ -642,11 +666,20 @@ def ressource(dicto, option, pause=[False]):
                     d = ((color[0] - look[0]) ** 2 + (color[1] - look[1]) ** 2 + (color[2] - look[2]) ** 2)
                     if (d < 9):
                         break
-                now = pyautogui.screenshot()
                 time.sleep(3.8 + random.random() * 0.5)
+                now = pyautogui.screenshot()
                 action = False
+                nombreressource = nombreressource + 1
         if action:
             break
+        if (nombreressource > nombremaxressource):
+            if not retry:
+                return 1
+            retry = False
+            nombreressource = 0
+            kill_test = kill_dofus(option, restart=True, commentaire='recolte trop de ressource sur une carte')
+            if kill_test == 1:
+                return 1
     return 0
 
 
@@ -711,6 +744,10 @@ def Go_to_POS_Caverne(GOTO, Pos, Couleur, Pos_Couleur, now, option,  pause=[Fals
 def Go_to_POS(GOTO, option, HorizontaleFirst=True, sauf={}, pause=[False], retry=1):
     try:
         now = tuple(MAP_POS())
+        if (200 + now[0] == 0) and (200 + now[1] == 0):
+            kill_test = kill_dofus(option, restart=True, commentaire='Erreur dans la lecture de la map')
+            if kill_test == 1:
+                return 2
         nombre_max_changement = abs(GOTO[0] - now[0]) + abs(GOTO[1] - now[1]) + 8
         nombre_changement = 0
         Now_inchangeant = 0
@@ -769,10 +806,14 @@ def Go_to_POS(GOTO, option, HorizontaleFirst=True, sauf={}, pause=[False], retry
                     return 2
                 Go_to_POS(GOTO, option, HorizontaleFirst, sauf, pause, retry=3)
             else:
-                kill_dofus(option, restart=False, commentaire='bug dans go to pos, une erreur est survenue')
+                kill_dofus(option, restart=False, commentaire='bug dans go to pos, une erreur est survenue 2e fois')
                 return 2
     time.sleep(2 + random.random() * 1)
     now = tuple(MAP_POS())
+    if (200 + now[0] == 0) and (200 + now[1] == 0):
+        kill_test = kill_dofus(option, restart=True, commentaire='Erreur dans la lecture de la map')
+        if kill_test == 1:
+            return 2
     if (GOTO[0] - now[0] != 0) or (GOTO[1] - now[1] != 0):
         Go_to_POS(GOTO, option, HorizontaleFirst, sauf, pause, retry)
     return 0

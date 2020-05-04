@@ -1,0 +1,95 @@
+Orme massif de cania
+
+Action
+Zaap Plaine des Porkass
+Go to -5, -22
+Go to -1, -22
+Check ressource
+Go to 1, -22
+Check ressource
+Zaap Plaine des Porkass
+Go to -6, -20
+Check ressource
+Go to -3, -19
+Check ressource
+Go to -3, -17
+Check ressource
+Go to -4, -16
+Check ressource
+Go to -4, -14
+Check ressource
+Go to -5, -14
+Check ressource
+Go to -5, -16
+Check ressource
+Go to -10, -16
+Check ressource
+Go to -12, -18
+Check ressource
+Go to -10, -21
+Check ressource
+Go to -8, -19
+Check ressource
+Zaap Massif de Cania
+Go to -14, -29
+Check ressource
+Go to -14, -24
+Go to -15, -24
+Check ressource
+Go to -20, -26
+Go to -22, -26
+Check ressource
+fin Action
+
+Zaap
+Plaine des Porkass
+Massif de Cania
+Bonta Centre-ville
+fin Zaap
+
+Ressource
+map -13, 2
+ressource position, 644, 120, couleur, 144, 169, 19
+map -14, -1
+ressource position, 562, 493, couleur, 127, 156, 14
+map -20, -5
+ressource position, 592, 296, couleur, 128, 124, 0
+map -20, -8
+ressource position, 840, 217, couleur, 236, 65, 101
+map -19, -11
+ressource position, 536, 94, couleur, 139, 110, 79
+map -17, -11
+ressource position, 981, 373, couleur, 127, 101, 71
+ressource position, 763, 124, couleur, 139, 110, 79
+map -14, -7
+ressource position, 863, 362, couleur, 191, 200, 53
+ressource position, 644, 121, couleur, 139, 110, 79
+map -16, -10
+ressource position, 364, 120, couleur, 142, 113, 81
+map -12, -9
+ressource position, 358, 193, couleur, 191, 200, 53
+map -12, 1
+ressource position, 756, 337, couleur, 124, 153, 13
+map -13, -1
+ressource position, 391, 379, couleur, 124, 153, 13
+map -12, -1
+ressource position, 507, 75, couleur, 143, 167, 20
+map -19, -2
+ressource position, 591, 314, couleur, 143, 167, 20
+map -19, -9
+ressource position, 899, 246, couleur, 144, 168, 20
+map -17, -2
+ressource position, 677, 92, couleur, 154, 128, 68
+map -21, -4
+ressource position, 898, 150, couleur, 175, 184, 41
+map -16, -8
+ressource position, 352, 354, couleur, 36, 23, 13
+map -15, -9
+ressource position, 369, 331, couleur, 159, 130, 68
+map -18, -9
+ressource position, 593, 214, couleur, 183, 150, 81
+map -14, -7
+ressource position, 857, 342, couleur, 203, 218, 53
+fin Ressource
+
+final

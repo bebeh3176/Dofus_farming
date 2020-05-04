@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9b2a868c-6a51-4fd2-af5c-281e4fddd0b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ressource_format.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ressource_format.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bot_Dofus.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_Dofus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Divers/Combat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Divers/Combat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Divers/fonction_principal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Divers/fonction_principal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEST.py" beforeDir="false" afterPath="$PROJECT_DIR$/TEST.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,16 +41,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Scripts" />
-      <recent name="$PROJECT_DIR$/Divers" />
-      <recent name="$PROJECT_DIR$/Picture" />
-      <recent name="D:\Documents\BOT_Dofus" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Documents\BOT_Dofus\Picture" />
       <recent name="D:\Documents\BOT_Dofus\Divers" />
       <recent name="D:\Documents\BOT_Dofus\Scripts" />
+      <recent name="D:\Documents\BOT_Dofus" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Scripts" />
+      <recent name="$PROJECT_DIR$/Divers" />
+      <recent name="$PROJECT_DIR$/Picture" />
       <recent name="D:\Documents\BOT_Dofus" />
     </key>
   </component>
@@ -181,9 +184,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.Ressource_format" />
+        <item itemvalue="Python.TEST" />
         <item itemvalue="Python.Traduire_Ressource" />
         <item itemvalue="Python.CLICK" />
-        <item itemvalue="Python.TEST" />
         <item itemvalue="Python.fonction_principal" />
       </list>
     </recent_temporary>
@@ -218,38 +221,38 @@
       <screen x="0" y="27" width="1280" height="676" />
     </state>
     <state x="179" y="27" width="912" height="676" key="CommitChangelistDialog2/0.27.1280.676@0.27.1280.676" timestamp="1586550756309" />
-    <state width="1257" height="164" key="GridCell.Tab.0.bottom" timestamp="1588213054300">
+    <state width="1257" height="149" key="GridCell.Tab.0.bottom" timestamp="1588567776950">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="164" key="GridCell.Tab.0.bottom/0.27.1280.676@0.27.1280.676" timestamp="1588213054300" />
-    <state width="1257" height="164" key="GridCell.Tab.0.center" timestamp="1588213054300">
+    <state width="1257" height="149" key="GridCell.Tab.0.bottom/0.27.1280.676@0.27.1280.676" timestamp="1588567776950" />
+    <state width="1257" height="149" key="GridCell.Tab.0.center" timestamp="1588567776950">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="164" key="GridCell.Tab.0.center/0.27.1280.676@0.27.1280.676" timestamp="1588213054300" />
-    <state width="1257" height="164" key="GridCell.Tab.0.left" timestamp="1588213054299">
+    <state width="1257" height="149" key="GridCell.Tab.0.center/0.27.1280.676@0.27.1280.676" timestamp="1588567776950" />
+    <state width="1257" height="149" key="GridCell.Tab.0.left" timestamp="1588567776950">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="164" key="GridCell.Tab.0.left/0.27.1280.676@0.27.1280.676" timestamp="1588213054299" />
-    <state width="1257" height="164" key="GridCell.Tab.0.right" timestamp="1588213054300">
+    <state width="1257" height="149" key="GridCell.Tab.0.left/0.27.1280.676@0.27.1280.676" timestamp="1588567776950" />
+    <state width="1257" height="149" key="GridCell.Tab.0.right" timestamp="1588567776950">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="164" key="GridCell.Tab.0.right/0.27.1280.676@0.27.1280.676" timestamp="1588213054300" />
-    <state width="1257" height="179" key="GridCell.Tab.1.bottom" timestamp="1588213054252">
+    <state width="1257" height="149" key="GridCell.Tab.0.right/0.27.1280.676@0.27.1280.676" timestamp="1588567776950" />
+    <state width="1257" height="225" key="GridCell.Tab.1.bottom" timestamp="1588567776937">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="179" key="GridCell.Tab.1.bottom/0.27.1280.676@0.27.1280.676" timestamp="1588213054252" />
-    <state width="1257" height="179" key="GridCell.Tab.1.center" timestamp="1588213054251">
+    <state width="1257" height="225" key="GridCell.Tab.1.bottom/0.27.1280.676@0.27.1280.676" timestamp="1588567776937" />
+    <state width="1257" height="225" key="GridCell.Tab.1.center" timestamp="1588567776937">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="179" key="GridCell.Tab.1.center/0.27.1280.676@0.27.1280.676" timestamp="1588213054251" />
-    <state width="1257" height="179" key="GridCell.Tab.1.left" timestamp="1588213054251">
+    <state width="1257" height="225" key="GridCell.Tab.1.center/0.27.1280.676@0.27.1280.676" timestamp="1588567776937" />
+    <state width="1257" height="225" key="GridCell.Tab.1.left" timestamp="1588567776936">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="179" key="GridCell.Tab.1.left/0.27.1280.676@0.27.1280.676" timestamp="1588213054251" />
-    <state width="1257" height="179" key="GridCell.Tab.1.right" timestamp="1588213054252">
+    <state width="1257" height="225" key="GridCell.Tab.1.left/0.27.1280.676@0.27.1280.676" timestamp="1588567776936" />
+    <state width="1257" height="225" key="GridCell.Tab.1.right" timestamp="1588567776937">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
-    <state width="1257" height="179" key="GridCell.Tab.1.right/0.27.1280.676@0.27.1280.676" timestamp="1588213054252" />
+    <state width="1257" height="225" key="GridCell.Tab.1.right/0.27.1280.676@0.27.1280.676" timestamp="1588567776937" />
     <state x="380" y="27" width="510" height="676" key="RollbackChangesDialog" timestamp="1588134013705">
       <screen x="0" y="27" width="1280" height="676" />
     </state>
@@ -267,9 +270,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Bot_Dofus.py</url>
-          <line>151</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/Divers/Combat.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

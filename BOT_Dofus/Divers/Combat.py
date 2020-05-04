@@ -6,6 +6,31 @@ from Divers import Divers as divers
 import random
 import copy
 
+def combat_fini():
+    template = cv2.imread('Picture/fermer_combat.png', 0)
+    template_BW = cv2.threshold(template, 100, 255, cv2.THRESH_BINARY)[1]
+    image = pyautogui.screenshot(region=(571, 416, 90, 230))
+    # image.show()
+    img_rgb = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
+    img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
+    img_BW = cv2.threshold(img_gray, 100, 255, cv2.THRESH_BINARY)[1]
+    res2 = cv2.matchTemplate(img_BW, template_BW, cv2.TM_SQDIFF_NORMED)
+    threshold = 0.1
+
+    # Store the coordinates of matched area in a numpy array
+    if np.any(res2 <= threshold):
+        position = np.where(res2 <= threshold)
+        result = (1, position[1][0]+571, position[0][0]+416)
+    else:
+        result = (0, 20, 20)
+    return result
+
+
+def click_combat_fini(pause=[False]):
+    bool_fini = combat_fini()
+    if bool_fini[0] == 1:
+        divers.move_mouse(bool_fini[1], bool_fini[2], 60, 10, alea=False, pause=pause)
+
 
 def findperso(color1, color2, color3, dist=10, tol=4):
     now = pyautogui.screenshot
@@ -32,6 +57,7 @@ def findperso(color1, color2, color3, dist=10, tol=4):
         else:
             break
     return None
+
 
 def obstacle(origine):
     dX = 2
@@ -80,9 +106,9 @@ def obstacle(origine):
     # k = cv2.waitKey()
 
 
-def findpath(obstacle, pos, but):
+def findpath(obstacleexterne, pos, but):
     try:
-        obstacle_dico = copy.deepcopy(obstacle)
+        obstacle_dico = copy.deepcopy(obstacleexterne)
         obstacle_dico[but] = True
         libre = list(obstacle_dico.keys())
         if pos in libre:
@@ -196,7 +222,7 @@ def combat(option, pause= [False]):
     try:
         ColorNextTurn = (213, 243, 0)
         #cra = [(253, 190, 45),(216, 138, 22),(119, 74, 2)]#Couleur Enutrof
-        cra = [(253, 57, 36),(196, 19, 0),(101, 11, 1)]#Couleur Cra
+        cra = [(253, 57, 36), (196, 19, 0), (101, 11, 1)]#Couleur Cra
         creature = [(77, 77, 93), (46, 54, 61), (126, 126, 142)]
         Sort_Sans_Vue = (595, 667)
         Sort_Avec_Vue = (621, 667)
@@ -206,6 +232,7 @@ def combat(option, pause= [False]):
         pos_ennemi = (0, 0)
         obst = {}
         if divers.findcolor(ColorNextTurn, (882, 646), (949, 669)):
+            bool_fini = (1, 570, 433)
             modeTacticCreature()
             ColorEndFight = (191, 230, 0)
             pos_perso = findperso(cra[0], cra[1], cra[2])
@@ -216,15 +243,17 @@ def combat(option, pause= [False]):
             while(True):
                 modeTacticCreature()
                 #lance le combat au premier tour et ensuite passe son tour
-                for i in range(0, 18):
+                for i in range(0, 20):
                     time.sleep(0.3)
                     if divers.findcolor(ColorNextTurn, (882, 646), (949, 669)):
                         break
-                    if divers.findcolor(ColorEndFight, (570, 430), (652, 455), tol=12):
-                        i = 17
-                    if ((i+1)%10) == 0:
+                    if combat_fini()[0] == 1:
+                        i = 19
+                        bool_fini = combat_fini()
+                        break
+                    if ((i+1) % 10) == 0:
                         divers.move_mouse(262, 694, 100, 4, alea=False, pause=pause)
-                else:
+                if i == 19:
                     break
 
                 divers.move_mouse(882, 646, 65, 20, alea=False, pause=pause)
@@ -235,8 +264,9 @@ def combat(option, pause= [False]):
                     time.sleep(0.3)
                     if divers.findcolor(ColorNextTurn, (882, 646), (949, 669)):
                         break
-                    if divers.findcolor(ColorEndFight, (570, 430), (652, 455), tol=12):
+                    if combat_fini()[0] == 1:
                         i = 49
+                        bool_fini = combat_fini()
                         break
                     if ((i + 1) % 15) == 0:
                         divers.move_mouse(262, 694, 100, 4, alea=False, pause=pause)
@@ -289,11 +319,13 @@ def combat(option, pause= [False]):
                         divers.move_mouse(Go_to[0]-6, Go_to[1]-4, 9, 6, alea=False, vitesse=2, pause=pause)
 
                         time.sleep(0.3 + random.random() * 0.3)
-                        if divers.findcolor(ColorEndFight, (570, 430), (652, 455), tol=12):
+                        if combat_fini()[0] == 1:
+                            bool_fini = combat_fini()
                             break
 
                         divers.move_mouse(Sort_Avec_Vue[0], Sort_Avec_Vue[1], 13, 14, alea=False, vitesse=2, pause=pause)
-                        if divers.findcolor(ColorEndFight, (570, 430), (652, 455), tol=12):
+                        if combat_fini()[0] == 1:
+                            bool_fini = combat_fini()
                             break
                         divers.move_mouse(Go_to[0]-6, Go_to[1]-4, 9, 6, vitesse=2, pause= pause)
                         # Sort à ligne de vue
@@ -305,16 +337,18 @@ def combat(option, pause= [False]):
                         divers.move_mouse(Go_to[0]-6, Go_to[1]-4, 9, 6, alea=False, vitesse=2, pause=pause)
 
                         time.sleep(0.3 + random.random() * 0.3)
-                        if divers.findcolor(ColorEndFight, (570, 430), (652, 455), tol=12):
+                        if combat_fini()[0] == 1:
+                            bool_fini = combat_fini()
                             break
 
                         divers.move_mouse(Sort_Sans_Vue[0], Sort_Sans_Vue[1], 13, 14, alea=False, vitesse=2, pause=pause)
-                        if divers.findcolor(ColorEndFight, (570, 430), (652, 455), tol=12):
+                        if combat_fini()[0] == 1:
+                            bool_fini = combat_fini()
                             break
                         divers.move_mouse(Go_to[0]-6, Go_to[1]-4, 9, 6, vitesse=2, pause=pause)
 
             time.sleep(0.3 + random.random() * 0.3)
-            divers.move_mouse(570, 433, 80, 12, alea=False, pause=pause)
+            divers.move_mouse(bool_fini[1], bool_fini[2], 60, 10, alea=False, pause=pause)
     except:
         return
 

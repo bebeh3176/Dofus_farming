@@ -3,6 +3,7 @@ import sys
 import threading
 import time
 import tkinter as tk
+import gc
 from datetime import datetime
 from tkinter import filedialog
 
@@ -115,6 +116,7 @@ class App(QWidget):
                     script_executer = Class_bot.BotScript(action, Dicto_ressource, self.dictoZaap, Dicto_Caverne,
                                                           option, self.Pause)
                     script_erreur = script_executer.run_all_action()
+                    gc.collect()
                     if script_erreur == 1:
                         self.kill_bot = True
                     del script_executer

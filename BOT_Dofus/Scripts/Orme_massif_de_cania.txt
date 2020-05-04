@@ -1,0 +1,84 @@
+Orme massif de cania
+
+Action
+Zaap Plaine des Porkass
+Go to -5, -22
+Go to -1, -22
+Check ressource
+Go to 1, -22
+Check ressource
+Zaap Plaine des Porkass
+Go to -6, -20
+Check ressource
+Go to -3, -19
+Check ressource
+Go to -3, -17
+Check ressource
+Go to -4, -16
+Check ressource
+Go to -4, -14
+Check ressource
+Go to -5, -14
+Check ressource
+Go to -5, -16
+Check ressource
+Go to -10, -16
+Check ressource
+Go to -12, -18
+Check ressource
+Go to -10, -21
+Check ressource
+Go to -8, -19
+Check ressource
+Zaap Massif de Cania
+Go to -14, -29
+Check ressource
+Go to -14, -24
+Go to -15, -24
+Check ressource
+Go to -20, -26
+Go to -22, -26
+Check ressource
+fin Action
+
+Zaap
+Plaine des Porkass
+Massif de Cania
+Bonta Centre-ville
+fin Zaap
+
+Ressource
+map -1, -22
+ressource position, 941, 132, couleur, 141, 172, 44
+ressource position, 342, 310, couleur, 240, 206, 150
+map 1, -22
+ressource position, 283, 79, couleur, 157, 160, 63
+map -6, -20
+ressource position, 604, 104, couleur, 203, 218, 53
+map -4, -16
+ressource position, 896, 516, couleur, 85, 72, 23
+ressource position, 895, 234, couleur, 82, 69, 20
+map -5, -16
+ressource position, 923, 163, couleur, 82, 69, 20
+map -5, -14
+ressource position, 671, 374, couleur, 81, 67, 18
+map -4, -14
+ressource position, 643, 163, couleur, 81, 67, 18
+map -10, -16
+ressource position, 493, 244, couleur, 178, 195, 45
+map -12, -18
+ressource position, 946, 124, couleur, 191, 200, 53
+map -15, -24
+ressource position, 616, 259, couleur, 142, 153, 34
+map -3, -17
+ressource position, 815, 326, couleur, 114, 122, 31
+map -8, -19
+ressource position, 532, 295, couleur, 123, 147, 53
+ressource position, 864, 220, couleur, 146, 186, 11
+map -14, -29
+ressource position, 759, 275, couleur, 136, 143, 44
+map -22, -26
+ressource position, 561, 340, couleur, 122, 127, 33
+fin Ressource
+
+final
