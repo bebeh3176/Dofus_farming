@@ -23,6 +23,16 @@ def lire_path(path):
         script.append(line[0:-1])
     return script
 
+def lire_superpath(path):
+    textfile = open(path, "r")
+    paths = []
+    while True:
+        line = textfile.readline()
+        if ((line == 'final\n') or (line == 'final')):
+            break
+        paths.append(line[0:-1])
+    return paths
+
 def lire_nom(script):
     return script[0]
 

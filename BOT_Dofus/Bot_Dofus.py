@@ -6,6 +6,7 @@ import tkinter as tk
 import gc
 from datetime import datetime
 from tkinter import filedialog
+import os
 
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QTextEdit, QLabel, QDoubleSpinBox, QCheckBox
 from pynput.keyboard import Listener, Controller
@@ -37,6 +38,10 @@ class App(QWidget):
         self.Loadbutton = QPushButton('Load script', self)
         self.Loadbutton.setGeometry(20, 30, 150, 30)
         self.Loadbutton.clicked.connect(self.Load_click)
+
+        self.SuperLoadbutton = QPushButton('Load super script', self)
+        self.SuperLoadbutton.setGeometry(440, 350, 150, 30)
+        self.SuperLoadbutton.clicked.connect(self.SuperLoad_click)
 
         self.Deletebutton = QPushButton('Delete script', self)
         self.Deletebutton.setGeometry(20, 80, 150, 30)
@@ -145,6 +150,24 @@ class App(QWidget):
         self.Pause[0] = True
         self.Resumebutton.setEnabled(True)
         self.Pausebutton.setEnabled(False)
+
+    def SuperLoad_click(self):
+        root = tk.Tk()
+        root.withdraw()
+        path = filedialog.askopenfilename()
+        if len(path) != 0:
+            all_path = Fct_script.lire_superpath(path)
+            for i in all_path:
+                if os.path.isfile(i):
+                    self.listPath.append(i)
+                    script = Fct_script.lire_path(i)
+                    nom = Fct_script.lire_nom(script)
+                    self.Script.append(nom)
+                    listZaap = Fct_script.lire_zaap(script, list(self.dictoZaap.keys()))
+                    self.dictoZaap = Fct_script.list2dicto_Zaap(listZaap)
+                    self.Zaap.clear()
+                    for j in list(self.dictoZaap.keys()):
+                        self.Zaap.append(j)
 
     # @pyqtSlot()
     def Load_click(self):

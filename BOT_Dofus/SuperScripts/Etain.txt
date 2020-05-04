@@ -1,0 +1,5 @@
+/home/benjamin/Desktop/Farming_sim/BOT_Dofus/Scripts/Mineur/Etain_Abraknide.txt
+/home/benjamin/Desktop/Farming_sim/BOT_Dofus/Scripts/Mineur/Etain_astrub.txt
+/home/benjamin/Desktop/Farming_sim/BOT_Dofus/Scripts/Mineur/Etain_plaine_de_cania.txt
+/home/benjamin/Desktop/Farming_sim/BOT_Dofus/Scripts/Mineur/Etain_Porco.txt
+final

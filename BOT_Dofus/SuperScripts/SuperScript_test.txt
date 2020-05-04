@@ -1,0 +1,5 @@
+/home/benjamin/Desktop/Farming_sim/BOT_Dofus/Scripts/Bucheron/bambou_lvl190.txt
+/home/benjamin/Desktop/Farming_sim/BOT_Dofus/Scripts/Cirque_de_cania_lvl160.txt
+/home/benjamin/Desktop/Farming_sim/BOT_Dofus/Scripts/Etain_Abraknide.txt
+/home/benjamin/Desktop/Farming_sim/BOT_Dofus/Scripts/Bucheron/Orme_alentour_bonta.txt
+final
