@@ -208,7 +208,6 @@ ressource position, 526, 348, couleur, 86, 33, 2
 map 27, -45
 ressource position, 839, 468, couleur, 82, 27, 6
 ressource position, 912, 474, couleur, 112, 33, 0
-ressource position, 499, 475, couleur, 104, 76, 45
 map 24, -45
 ressource position, 621, 118, couleur, 154, 151, 112
 map 23, -45
@@ -234,24 +233,17 @@ map 25, -44
 ressource position, 918, 151, couleur, 97, 44, 16
 map 25, -45
 ressource position, 726, 131, couleur, 124, 107, 73
-ressource position, 784, 442, couleur, 140, 58, 13
-ressource position, 503, 60, couleur, 140, 122, 95
 map 26, -45
 ressource position, 582, 152, couleur, 103, 49, 14
 ressource position, 637, 488, couleur, 127, 73, 33
 ressource position, 968, 279, couleur, 131, 92, 52
 map 27, -44
 ressource position, 744, 254, couleur, 69, 28, 0
-ressource position, 615, 244, couleur, 137, 58, 15
 map 30, -42
 ressource position, 400, 362, couleur, 109, 31, 30
 map 21, -42
 ressource position, 765, 172, couleur, 182, 169, 93
 ressource position, 341, 285, couleur, 122, 109, 53
-map 26, -43
-ressource position, 429, 403, couleur, 99, 84, 61
-map 25, -42
-ressource position, 373, 515, couleur, 115, 113, 86
 fin Ressource
 
 final

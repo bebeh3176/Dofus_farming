@@ -1,7 +1,7 @@
 from Divers import fonction_principal as Fct
 
 
-def lire_zaap(script,listzaap):
+def lire_zaap(script,listzaap=[]):
     begin = False
     for i in script:
         if i == 'fin Zaap':
@@ -13,6 +13,7 @@ def lire_zaap(script,listzaap):
                 listzaap.append(i)
     return listzaap
 
+
 def lire_path(path):
     textfile = open(path, "r")
     script = []
@@ -22,6 +23,7 @@ def lire_path(path):
             break
         script.append(line[0:-1])
     return script
+
 
 def lire_superpath(path):
     textfile = open(path, "r")
@@ -76,7 +78,7 @@ def lire_script(script):
     ressource_caverne = {}
     couleur_caverne = {}
     pos = -1
-    caverne_actuel = (0,0)
+    caverne_altuel = (0, 0)
     for i in script:
         if i == 'fin Caverne':
             ressource_caverne[pos] = ressource_caverne_temp
@@ -117,6 +119,38 @@ def lire_script(script):
 
 
     return action, Dicto_ressource, Tout_caverne
+
+
+def ecrire_script(path, nom, list_action, dicto_ressource, list_zaap, dicto_caverne):
+    script = open(path, "w")
+    script.write('{}\n\nAction\n'.format(nom))
+    for i in list_action:
+        script.write('{}\n'.format(i))
+    script.write('fin Action\n\nZaap\n')
+    for i in list_zaap:
+        script.write('{}\n'.format(i))
+    script.write('fin Zaap\n')
+    if not(dicto_ressource == {}):
+        script.write('\nRessource\n')
+        for i in list(dicto_ressource.keys()):
+            script.write('map {}, {}\n'.format(i[0], i[1]))
+            for j in list(dicto_ressource[i].keys()):
+                script.write('ressource position, {}, {}, couleur, {}, {}, {}\n'.format(j[0], j[1], dicto_ressource[i][j][0], dicto_ressource[i][j][1], dicto_ressource[i][j][2]))
+        script.write('fin Ressource\n')
+    if not(dicto_caverne == {}):
+        script.write('\nCaverne\n')
+        for i in list(dicto_caverne.keys()):
+            script.write('New {}, {}\n'.format(i[0], i[1]))
+            for j in dicto_caverne[i][0].keys():
+                script.write('position, {}, {}, {}, {},'.format(dicto_caverne[i][0][j][0], dicto_caverne[i][0][j][1], dicto_caverne[i][0][j][2], dicto_caverne[i][0][j][3]))
+                script.write(' couleur, {}, {}, {}, position, {}, {}\n'.format(dicto_caverne[i][1][j][0], dicto_caverne[i][1][j][1], dicto_caverne[i][1][j][2], dicto_caverne[i][2][j][0], dicto_caverne[i][2][j][1]))
+                if j in dicto_caverne[i][3].keys():
+                    for k in dicto_caverne[i][3][j].keys():
+                        script.write('ressource position, {}, {}, couleur, {}, {}, {}\n'.format(k[0], k[1], dicto_caverne[i][3][j][k][0], dicto_caverne[i][3][j][k][1], dicto_caverne[i][3][j][k][2]))
+        script.write('fin Caverne\n')
+    script.write('\nfinal')
+    script.close()
+    return
 
 
 def run_action(action, Dicto_ressource, Dicto_zaap, Dicto_caverne, pause=[False]):

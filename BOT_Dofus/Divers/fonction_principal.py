@@ -1,7 +1,7 @@
 from Divers import Divers as divers
 from Divers import Combat as combat
-#import Divers as divers
-#import Combat as combat
+# import Divers as divers
+# import Combat as combat
 import threading
 import os
 import pyautogui
@@ -33,15 +33,15 @@ def Level_Up(pause=[False]):
                 color = now.getpixel((72, 425))
                 colorECH = (214, 176, 0)
                 ECH1 = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
-                            color[2] - colorECH[2]) ** 2) <= 10
+                        color[2] - colorECH[2]) ** 2) <= 10
                 color = now.getpixel((104, 421))
                 colorECH = (214, 176, 0)
                 ECH2 = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
-                            color[2] - colorECH[2]) ** 2) <= 10
+                        color[2] - colorECH[2]) ** 2) <= 10
                 color = now.getpixel((135, 425))
                 colorECH = (170, 140, 0)
                 ECH3 = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
-                            color[2] - colorECH[2]) ** 2) <= 10
+                        color[2] - colorECH[2]) ** 2) <= 10
                 if not ((ECH1 and ECH2) or (ECH1 and ECH3) or (ECH3 and ECH2)):
                     break
                 time.sleep(0.3)
@@ -56,7 +56,7 @@ def Level_Up(pause=[False]):
 
 def GoHavreSac(option, entre=True, pause=[False]):
     potion_rappel = True
-    if(entre):
+    if (entre):
         compteur = 0
         while True:
             compteur = compteur + 1
@@ -88,7 +88,8 @@ def GoHavreSac(option, entre=True, pause=[False]):
                 now = pyautogui.screenshot()
                 color = now.getpixel((712, 147))
                 colorECH = (161, 87, 11)
-                HavreSac = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (color[2] - colorECH[2]) ** 2) <= 4
+                HavreSac = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
+                            color[2] - colorECH[2]) ** 2) <= 4
                 if (HavreSac):
                     break
                 time.sleep(0.3)
@@ -97,17 +98,18 @@ def GoHavreSac(option, entre=True, pause=[False]):
             break
     else:
         while True:
-            divers.move_mouse(875, 683, 14, 15, pause = pause)
+            divers.move_mouse(875, 683, 14, 15, pause=pause)
             time.sleep(0.5 + random.random() * 0.5)
             for i in range(0, 15):
-                if (i%5 == 0):
+                if (i % 5 == 0):
                     Validation_erreur = Validation(option, pause=pause)
                     if Validation_erreur == 1:
                         return 1
                 now = pyautogui.screenshot()
                 color = now.getpixel((712, 147))
                 colorECH = (161, 87, 11)
-                ECH1 = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (color[2] - colorECH[2]) ** 2) <= 4
+                ECH1 = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
+                            color[2] - colorECH[2]) ** 2) <= 4
                 if not ECH1:
                     break
                 time.sleep(0.3)
@@ -149,9 +151,9 @@ def zaap(destination, dictozaap, option, pause=[False], retry=True):
             divers.move_mouse(478, (238 + 29 * zaapNb), 200, 14, Click=1, pause=pause)
             continue
         break
-    time.sleep(0.4+random.random()*0.3)
-    divers.move_mouse(478, (238+29*zaapNb), 200, 14, Click = 2, pause= pause)
-    time.sleep(5.8+random.random()*0.5)
+    time.sleep(0.4 + random.random() * 0.3)
+    divers.move_mouse(478, (238 + 29 * zaapNb), 200, 14, Click=2, pause=pause)
+    time.sleep(5.8 + random.random() * 0.5)
     return 0
 
 
@@ -170,13 +172,15 @@ def VidePod(dictozaap, option, pause=[False], baspourcentage=True):
         if option.EmplacementViderPod == 'Maison':
             videerror = GotoMaison(dictozaap, option, pause)
             if videerror == 2:
-                kill_test = kill_dofus(option, restart=True, commentaire='Erreur survenur en allant se vider dans la maison')
+                kill_test = kill_dofus(option, restart=True,
+                                       commentaire='Erreur survenur en allant se vider dans la maison')
                 if kill_test == 1:
                     return 1
                 videerror = GotoMaison(dictozaap, option, pause)
                 if 0 < videerror:
                     return 1
     return videerror
+
 
 def GotoMaison(dictozaap, option, pause=[False]):
     zaap_erreur = zaap('Bonta Centre-ville', dictozaap, option, pause=pause)
@@ -202,7 +206,8 @@ def GotoMaison(dictozaap, option, pause=[False]):
                 now = pyautogui.screenshot()
                 color = now.getpixel((666, 317))
                 colorECH = (108, 160, 160)
-                Test = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (color[2] - colorECH[2]) ** 2) <= 4
+                Test = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
+                            color[2] - colorECH[2]) ** 2) <= 4
                 if Test:
                     break
                 time.sleep(0.5)
@@ -228,7 +233,8 @@ def GotoMaison(dictozaap, option, pause=[False]):
                 now = pyautogui.screenshot()
                 color = now.getpixel((666, 317))
                 colorECH = (108, 160, 160)
-                Test = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (color[2] - colorECH[2]) ** 2) <= 4
+                Test = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
+                            color[2] - colorECH[2]) ** 2) <= 4
                 if Test:
                     break
                 time.sleep(0.5)
@@ -257,7 +263,7 @@ def GotoMaison(dictozaap, option, pause=[False]):
         break
     else:
         return 2
-    #click sur coffre et click ouvre
+    # click sur coffre et click ouvre
     if option.proprietairemaison:
         for j in range(0, 5):
             Validation_erreur = Validation(option, pause=pause)
@@ -275,7 +281,8 @@ def GotoMaison(dictozaap, option, pause=[False]):
                 now = pyautogui.screenshot()
                 color = now.getpixel((885, 114))
                 colorECH = (83, 84, 83)
-                Test = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (color[2] - colorECH[2]) ** 2) <= 4
+                Test = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
+                            color[2] - colorECH[2]) ** 2) <= 4
                 if Test:
                     break
                 time.sleep(0.5)
@@ -300,7 +307,8 @@ def GotoMaison(dictozaap, option, pause=[False]):
                 now = pyautogui.screenshot()
                 color = now.getpixel((885, 114))
                 colorECH = (83, 84, 83)
-                Test = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (color[2] - colorECH[2]) ** 2) <= 4
+                Test = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
+                            color[2] - colorECH[2]) ** 2) <= 4
                 if Test:
                     break
                 time.sleep(0.5)
@@ -318,6 +326,12 @@ def GotoMaison(dictozaap, option, pause=[False]):
     posx = posx + 20 + int(random.random() * 90)
     posy = posy + 35 + int(random.random() * 8)
     divers.move_mouse(posx, posy, 0, 0)
+
+    # sort du poisson pour nourrir la dragodinde
+    if option.nourrir_dragodinde:
+        res = nourrir_monture(option, pause)
+        return res
+
     # fermer coffre
     for j in range(0, 5):
         Validation_erreur = Validation(option, pause=pause)
@@ -340,9 +354,140 @@ def GotoMaison(dictozaap, option, pause=[False]):
         return 2
     return 0
 
+
+def nourrir_monture(option, pause=[False]):
+    # sort du poisson pour nourrir la dragodinde
+    divers.move_mouse(315, 558, 100, 10, alea=True, pause=pause)
+    pyautogui.typewrite(option.poisson, interval=0.25)
+    divers.move_mouse(270, 176, 25, 23, Click=0, alea=False)
+    time.sleep(0.5)
+    pyautogui.drag((570 + random.random() * 110), (50 + random.random() * 100), 1.6 + random.random() * 0.8)
+    time.sleep(0.3 + random.random() * 0.2)
+    pyautogui.typewrite("200", interval=0.25)
+    time.sleep(0.3 + random.random() * 0.2)
+    pyautogui.press('enter')
+
+    # fermer coffre
+    for j in range(0, 5):
+        Validation_erreur = Validation(option, pause=pause)
+        if Validation_erreur == 1:
+            return 1
+        divers.move_mouse(1023, 111, 7, 7, alea=False, pause=pause)
+        time.sleep(1 + random.random() * 0.5)
+        for i in range(0, 10):
+            now = pyautogui.screenshot()
+            color = now.getpixel((814, 265))
+            colorECH = (172, 39, 9)
+            Test = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (color[2] - colorECH[2]) ** 2) <= 4
+            if Test:
+                break
+            time.sleep(0.5)
+        else:
+            continue
+        break
+    else:
+        return 2
+
+    # ouvre menu dragodinde
+    for j in range(0, 4):
+        Validation_erreur = Validation(option, pause=pause)
+        if Validation_erreur == 1:
+            return 1
+        divers.move_mouse(899, 683, 11, 13, alea=False, pause=pause)
+        time.sleep(1 + random.random() * 0.5)
+        for i in range(0, 10):
+            now = pyautogui.screenshot()
+            color = now.getpixel((879, 167))
+            colorECH = (85, 85, 85)
+            Test = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
+                    color[2] - colorECH[2]) ** 2) <= 4
+            if Test:
+                break
+            time.sleep(0.5)
+        else:
+            continue
+        break
+    else:
+        return 2
+
+    # ouvre menu nourriture
+    for j in range(0, 4):
+        Validation_erreur = Validation(option, pause=pause)
+        if Validation_erreur == 1:
+            return 1
+        divers.move_mouse(875, 577, 10, 12, alea=False, pause=pause)
+        time.sleep(1 + random.random() * 0.5)
+        for i in range(0, 10):
+            now = pyautogui.screenshot()
+            color = now.getpixel((593, 207))
+            colorECH = (92, 93, 92)
+            Test = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
+                    color[2] - colorECH[2]) ** 2) <= 4
+            if Test:
+                break
+            time.sleep(0.5)
+        else:
+            continue
+        break
+    else:
+        return 2
+
+    # click sur nourriture
+    divers.move_mouse(510, 231, 18, 20, alea=False, pause=pause)
+    # click sur max
+    divers.move_mouse(701, 399, 14, 9, alea=False, pause=pause)
+    # click sur manger
+    divers.move_mouse(620, 435, 36, 9, Click=2, alea=True, pause=pause)
+
+    # fermer menu nourriture
+    for j in range(0, 5):
+        Validation_erreur = Validation(option, pause=pause)
+        if Validation_erreur == 1:
+            return 1
+        divers.move_mouse(770, 205, 4, 6, alea=False, pause=pause)
+        time.sleep(1 + random.random() * 0.5)
+        for i in range(0, 10):
+            now = pyautogui.screenshot()
+            color = now.getpixel((593, 207))
+            colorECH = (92, 93, 92)
+            Test = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
+                    color[2] - colorECH[2]) ** 2) > 4
+            if Test:
+                break
+            time.sleep(0.5)
+        else:
+            continue
+        break
+    else:
+        return 2
+
+    # fermer menu dragodinde
+    for j in range(0, 5):
+        Validation_erreur = Validation(option, pause=pause)
+        if Validation_erreur == 1:
+            return 1
+        divers.move_mouse(1015, 164, 4, 5, alea=False, pause=pause)
+        time.sleep(1 + random.random() * 0.5)
+        for i in range(0, 10):
+            now = pyautogui.screenshot()
+            color = now.getpixel((879, 167))
+            colorECH = (85, 85, 85)
+            Test = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
+                    color[2] - colorECH[2]) ** 2) > 4
+            if Test:
+                break
+            time.sleep(0.5)
+        else:
+            continue
+        break
+    else:
+        return 2
+    return 0
+
+
 def Banque(dictozaap, option, pause=[False]):
     zaap_erreur = zaap('Village des Eleveurs', dictozaap, option, pause=pause)
-    if(zaap_erreur == 1):
+    if (zaap_erreur == 1):
         return 1
     Go_to_POS([-16, 4], option)
     # entre dans la banque
@@ -399,19 +544,19 @@ def Banque(dictozaap, option, pause=[False]):
             continue
         break
     # transfert des shits
-    posx = 834 + int(random.random()*6)
-    posy = 134 + int(random.random()*5)
-    divers.move_mouse(posx, posy, 0, 0, alea = False, pause= pause)
+    posx = 834 + int(random.random() * 6)
+    posy = 134 + int(random.random() * 5)
+    divers.move_mouse(posx, posy, 0, 0, alea=False, pause=pause)
     time.sleep(1.2 + random.random() * 0.5)
-    posx = posx + 20 + int(random.random()*90)
-    posy = posy + 35 + int(random.random()*8)
+    posx = posx + 20 + int(random.random() * 90)
+    posy = posy + 35 + int(random.random() * 8)
     divers.move_mouse(posx, posy, 0, 0)
     # fermer banque
     while True:
         Validation_erreur = Validation(option, pause=pause)
         if Validation_erreur == 1:
             return 1
-        divers.move_mouse(1023, 111, 7, 7, alea = False, pause= pause)
+        divers.move_mouse(1023, 111, 7, 7, alea=False, pause=pause)
         time.sleep(1 + random.random() * 0.5)
         for i in range(0, 10):
             now = pyautogui.screenshot()
@@ -443,7 +588,7 @@ def Echange(option, pause=[False]):
         time.sleep(0.8 + random.random() * 0.4)
         while True:
             # Accepte lechance
-            divers.move_mouse(511, 396, 50, 8, pause= pause)
+            divers.move_mouse(511, 396, 50, 8, pause=pause)
             time.sleep(0.8 + random.random() * 0.5)
             for i in range(0, 10):
                 # regarde si lechange a ete accepter ou refuser, si aucun des deux, refait accpeter echange
@@ -451,15 +596,15 @@ def Echange(option, pause=[False]):
                 color = now.getpixel((629, 349))
                 colorECH = (157, 137, 23)
                 ECH1 = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
-                            color[2] - colorECH[2]) ** 2) <= 10
+                        color[2] - colorECH[2]) ** 2) <= 10
                 color = now.getpixel((688, 353))
                 colorECH = (221, 186, 7)
                 ECH2 = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
-                            color[2] - colorECH[2]) ** 2) <= 10
+                        color[2] - colorECH[2]) ** 2) <= 10
                 color = now.getpixel((511, 396))
                 colorECH = (191, 231, 0)
                 ECH3 = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
-                            color[2] - colorECH[2]) ** 2) <= 10
+                        color[2] - colorECH[2]) ** 2) <= 10
                 if not ((ECH1 and ECH2) or (ECH1 and ECH3) or (ECH3 and ECH2)):
                     break
                 time.sleep(0.3)
@@ -475,14 +620,14 @@ def Echange(option, pause=[False]):
         ECH1 = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (color[2] - colorECH[2]) ** 2) <= 4
         if (ECH1):
             while True:
-                divers.move_mouse(1021, 110, 7, 8, pause= pause)
+                divers.move_mouse(1021, 110, 7, 8, pause=pause)
                 time.sleep(0.5 + random.random() * 0.5)
                 for i in range(0, 10):
                     now = pyautogui.screenshot()
                     color = now.getpixel((591, 168))
                     colorECH = (93, 93, 93)
                     ECH1 = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
-                                color[2] - colorECH[2]) ** 2) <= 4
+                            color[2] - colorECH[2]) ** 2) <= 4
                     if not (ECH1):
                         break
                     time.sleep(0.3)
@@ -493,7 +638,7 @@ def Echange(option, pause=[False]):
         havre_sac_erreur = GoHavreSac(option, True, pause=pause)
         if havre_sac_erreur == 1:
             return 1
-        time.sleep(150 + random.random()*30)
+        time.sleep(150 + random.random() * 30)
         havre_sac_erreur = GoHavreSac(option, False, pause=pause)
         if havre_sac_erreur == 1:
             return 1
@@ -517,22 +662,22 @@ def Defi(option, pause=[False]):
     if ((ECH1 and ECH2) or (ECH1 and ECH3) or (ECH3 and ECH2)):
         time.sleep(0.8 + random.random() * 0.4)
         while True:
-            divers.move_mouse(598, 400, 80, 11, pause= pause)
+            divers.move_mouse(598, 400, 80, 11, pause=pause)
             time.sleep(0.8 + random.random() * 0.5)
             for i in range(0, 10):
                 now = pyautogui.screenshot()
                 color = now.getpixel((651, 347))
                 colorECH = (60, 64, 43)
                 ECH1 = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
-                            color[2] - colorECH[2]) ** 2) <= 10
+                        color[2] - colorECH[2]) ** 2) <= 10
                 color = now.getpixel((640, 345))
                 colorECH = (58, 66, 45)
                 ECH2 = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
-                            color[2] - colorECH[2]) ** 2) <= 10
+                        color[2] - colorECH[2]) ** 2) <= 10
                 color = now.getpixel((632, 341))
                 colorECH = (60, 65, 47)
                 ECH3 = ((color[0] - colorECH[0]) ** 2 + (color[1] - colorECH[1]) ** 2 + (
-                            color[2] - colorECH[2]) ** 2) <= 10
+                        color[2] - colorECH[2]) ** 2) <= 10
                 if not ((ECH1 and ECH2) or (ECH1 and ECH3) or (ECH3 and ECH2)):
                     break
                 time.sleep(0.3)
@@ -573,7 +718,6 @@ def NUM_POS(img, template):
 
     res2 = cv2.matchTemplate(img, template_BW, cv2.TM_SQDIFF_NORMED)
 
-
     # Specify a threshold
     threshold = 0.1
 
@@ -602,7 +746,7 @@ def MAP_POS(TEST=False):
         num = NUM_POS(img_BW, template)
         check = -3
         for j in num:
-            if(2 < j - check):
+            if (2 < j - check):
                 pos[j] = i
                 check = j
     posfin = ''
@@ -618,11 +762,11 @@ def MAP_POS(TEST=False):
                     break
             if pos[i] != ',':
                 posfin = '{}{}'.format(posfin, pos[i])
-                if(virgule == 1) & TEST:
+                if (virgule == 1) & TEST:
                     return True
     except:
         posnom = [-200, -200]
-        if(TEST):
+        if (TEST):
             return False
     if ((posnom == []) or (virgule != 2)):
         posnom = [-200, -200]
@@ -683,13 +827,14 @@ def ressource(dicto, option, pause=[False]):
     return 0
 
 
-def Go_to_POS_Caverne(GOTO, Pos, Couleur, Pos_Couleur, now, option,  pause=[False]):
+def Go_to_POS_Caverne(GOTO, Pos, Couleur, Pos_Couleur, now, option, pause=[False]):
     now_Max = len(Couleur)
     compteur_changement_map = 0
-    while(now != GOTO):
+    while (now != GOTO):
         screen = pyautogui.screenshot()
         color = screen.getpixel(Pos_Couleur[now])
-        if 2 < ((color[0] - Couleur[now][0]) ** 2 + (color[1] - Couleur[now][1]) ** 2 + (color[2] - Couleur[now][2]) ** 2):
+        if 2 < ((color[0] - Couleur[now][0]) ** 2 + (color[1] - Couleur[now][1]) ** 2 + (
+                color[2] - Couleur[now][2]) ** 2):
             compteur = 0
             while True:
                 now = now + 1
@@ -709,7 +854,8 @@ def Go_to_POS_Caverne(GOTO, Pos, Couleur, Pos_Couleur, now, option,  pause=[Fals
                     screen = pyautogui.screenshot()
                     now = 0
                 color = screen.getpixel(Pos_Couleur[now])
-                if ((color[0] - Couleur[now][0]) ** 2 + (color[1] - Couleur[now][1]) ** 2 + (color[2] - Couleur[now][2]) ** 2) < 2:
+                if ((color[0] - Couleur[now][0]) ** 2 + (color[1] - Couleur[now][1]) ** 2 + (
+                        color[2] - Couleur[now][2]) ** 2) < 2:
                     break
         if now == GOTO:
             break
@@ -723,19 +869,20 @@ def Go_to_POS_Caverne(GOTO, Pos, Couleur, Pos_Couleur, now, option,  pause=[Fals
             screen = pyautogui.screenshot()
             now_temp = now + 1
             color = screen.getpixel(Pos_Couleur[now_temp])
-            if ((color[0] - Couleur[now_temp][0]) ** 2 + (color[1] - Couleur[now_temp][1]) ** 2 + (color[2] - Couleur[now_temp][2]) ** 2) < 2:
+            if ((color[0] - Couleur[now_temp][0]) ** 2 + (color[1] - Couleur[now_temp][1]) ** 2 + (
+                    color[2] - Couleur[now_temp][2]) ** 2) < 2:
                 now = now + 1
                 if now == now_Max:
                     now = 0
                 time.sleep(random.random() * 0.5)
                 break
         compteur_changement_map = compteur_changement_map + 1
-        if compteur_changement_map == (now_Max+4):
+        if compteur_changement_map == (now_Max + 4):
             kill_test = kill_dofus(option, restart=True, commentaire='trop de changement de carte caverne')
             if kill_test == 1:
                 return 2000000
             compteur_changement_map = compteur_changement_map + 1
-        if compteur_changement_map == 2*(now_Max + 4):
+        if compteur_changement_map == 2 * (now_Max + 4):
             kill_dofus(option, restart=False, commentaire='trop de changement de carte caverne')
             return 2000000
     return now
@@ -761,7 +908,7 @@ def Go_to_POS(GOTO, option, HorizontaleFirst=True, sauf={}, pause=[False], retry
             dx = GOTO[0] - now[0]
             dy = GOTO[1] - now[1]
             if tuple(now) in sauf:
-                 divers.move_mouse(sauf[now][0], sauf[now][1], sauf[now][2], sauf[now][3], pause= pause)
+                divers.move_mouse(sauf[now][0], sauf[now][1], sauf[now][2], sauf[now][3], pause=pause)
             else:
                 if (HorizontaleFirst):
                     if dx > 0:
@@ -774,13 +921,13 @@ def Go_to_POS(GOTO, option, HorizontaleFirst=True, sauf={}, pause=[False], retry
                         divers.move_mouse(425, 58, 425, 6, pause=pause)
                 else:
                     if (dy > 0):
-                        divers.move_mouse(425, 619, 425, 6, pause= pause)
+                        divers.move_mouse(425, 619, 425, 6, pause=pause)
                     elif (dy < 0):
-                        divers.move_mouse(425, 58, 425, 6, pause= pause)
+                        divers.move_mouse(425, 58, 425, 6, pause=pause)
                     elif (dx > 0):
-                        divers.move_mouse(1029, 180, 13, 320, pause= pause)
+                        divers.move_mouse(1029, 180, 13, 320, pause=pause)
                     elif (dx < 0):
-                        divers.move_mouse(239, 180, 13, 320, pause= pause)
+                        divers.move_mouse(239, 180, 13, 320, pause=pause)
             Now_inchangeant = Now_inchangeant + 1
             for i in range(1, 13):
                 if i % 5 == 0:
@@ -819,7 +966,7 @@ def Go_to_POS(GOTO, option, HorizontaleFirst=True, sauf={}, pause=[False], retry
     return 0
 
 
-def kill_dofus(option, restart=True, commentaire = 'Pas de commentaire'):
+def kill_dofus(option, restart=True, commentaire='Pas de commentaire'):
     picture_erreur = pyautogui.screenshot()
     time_erreur = datetime.today()
     time_erreur = datetime(time_erreur.year, time_erreur.month, time_erreur.day, time_erreur.hour, time_erreur.minute)
@@ -857,7 +1004,7 @@ def ouverture_dofus(option, text_name="LOG/test.txt"):
         template = cv2.imread('Picture/ankama.png', 0)
         template_BW = cv2.threshold(template, 160, 255, cv2.THRESH_BINARY)[1]
         for i in range(18):
-            divers.move_mouse(32+i*66,739,1,1,Click = 0,alea = False)
+            divers.move_mouse(32 + i * 66, 739, 1, 1, Click=0, alea=False)
             image = pyautogui.screenshot()
             image = image.crop((5, 670, 1274, 696))
             # image.show()
@@ -872,13 +1019,13 @@ def ouverture_dofus(option, text_name="LOG/test.txt"):
                 print(i)
                 pyautogui.click()
                 time.sleep(2)
-                divers.move_mouse(1106, 572,1,1,alea = False)
+                divers.move_mouse(1106, 572, 1, 1, alea=False)
                 time.sleep(10)
                 break
         # Close warning windows
         template = cv2.imread('Picture/warning.png', 0)
         template_BW = cv2.threshold(template, 160, 255, cv2.THRESH_BINARY)[1]
-        while(True):
+        while (True):
             image = pyautogui.screenshot()
             image = image.crop((54, 61, 320, 92))
             img_rgb = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
@@ -887,7 +1034,7 @@ def ouverture_dofus(option, text_name="LOG/test.txt"):
             res2 = cv2.matchTemplate(img_BW, template_BW, cv2.TM_SQDIFF_NORMED)
             threshold = 0.4
             if np.any(res2 <= threshold):
-                divers.move_mouse(113, 210, 1, 1, alea = False)
+                divers.move_mouse(113, 210, 1, 1, alea=False)
             else:
                 break
         time.sleep(10)
@@ -957,11 +1104,11 @@ def ouverture_dofus(option, text_name="LOG/test.txt"):
                 divers.move_mouse(736, 547, 100, 19, alea=False)
             else:
                 break
-        #attend que le jeu load, apres 40 sec ferme le jeu et reouvre
+        # attend que le jeu load, apres 40 sec ferme le jeu et reouvre
         test = False
         for i in range(20):
             time.sleep(2)
-            if(MAP_POS(True)): #regarde si le jeu est loader en verifiant si on peut lire la carte
+            if (MAP_POS(True)):  # regarde si le jeu est loader en verifiant si on peut lire la carte
                 break
         else:
             thread_kill = threading.Thread(target=xkill_short)
@@ -973,7 +1120,7 @@ def ouverture_dofus(option, text_name="LOG/test.txt"):
 
         divers.move_mouse(310, 610, 130, 0, Click=0, alea=False)
         time.sleep(0.5)
-        pyautogui.drag(0, (40+random.random() * 15), 0.5+random.random()*0.7)
+        pyautogui.drag(0, (40 + random.random() * 15), 0.5 + random.random() * 0.7)
         Log_message = open(text_name, "a")
         Log_message.write('\nreussite')
         Log_message.close()
@@ -988,4 +1135,3 @@ def ouverture_dofus(option, text_name="LOG/test.txt"):
 
 def xkill_short():
     os.system("xkill")
-

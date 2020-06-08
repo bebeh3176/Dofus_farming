@@ -9,10 +9,12 @@ confirmation = ''
 def Press(key):
     try:
         global ressource
-        global confirmation
+        global confirmationr
         if (key.char == 'r'):
             x, y, color =  detectclick()
-            ressource.append('ressource position, {0}, {1}, couleur, {2}, {3}, {4}'.format(x,y,color[0],color[1],color[2]))
+            print('ressource position, {0}, {1}, couleur, {2}, {3}, {4}'.format(x, y, color[0], color[1], color[2]))
+
+            #ressource.append('ressource position, {0}, {1}, couleur, {2}, {3}, {4}'.format(x,y,color[0],color[1],color[2]))
         if (key.char == 'c'):
             x, y, color =  detectclick()
             confirmation = 'couleur, {2}, {3}, {4}, position, {0}, {1}'.format(x,y,color[0],color[1],color[2])

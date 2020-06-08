@@ -1,49 +1,102 @@
-Orme massif de cania
+Orme montargne koalak
 
 Action
-Zaap Plaine des Porkass
-Go to -5, -22
-Go to -1, -22
+Zaap Village des Eleveurs
+Go to -13, 2
 Check ressource
-Go to 1, -22
+Go to -12, 2
 Check ressource
-Zaap Plaine des Porkass
-Go to -6, -20
+Go to -12, 1
 Check ressource
-Go to -3, -19
+Go to -12, 0
 Check ressource
-Go to -3, -17
+Go to -12, -1
 Check ressource
-Go to -4, -16
+Go to -13, -1
 Check ressource
-Go to -4, -14
+Go to -13, 0
 Check ressource
-Go to -5, -14
+Go to -13, -1
 Check ressource
-Go to -5, -16
+Go to -14, -1
 Check ressource
-Go to -10, -16
+Go to -13, -1
 Check ressource
-Go to -12, -18
+Go to -13, -2
 Check ressource
-Go to -10, -21
+Go to -15, -2
 Check ressource
-Go to -8, -19
+Go to -16, -2
 Check ressource
-Zaap Massif de Cania
-Go to -14, -29
+Go to -17, -2
 Check ressource
-Go to -14, -24
-Go to -15, -24
+Go to -18, -2
 Check ressource
-Go to -20, -26
-Go to -22, -26
+Go to -19, -2
+Check ressource
+Go to -20, -2
+Check ressource
+Go to -21, -1
+Check ressource
+Go to -21, -2
+Go to -22, -2
+Check ressource
+Go to -21, -3
+Check ressource
+Go to -20, -4
+Go to -21, -4
+Check ressource
+Go to -20, -5, sauf, -20, -4, 410, 58, 20, 6
+Check ressource
+Go to -20, -6
+Go to -19, -6
+Check ressource
+Go to -19, -7
+Check ressource
+Go to -20, -8
+Check ressource
+Go to -19, -9, sauf, -19, -8, 295, 59, 80, 6
+Check ressource
+Go to -18, -9
+Check ressource
+Go to -18, -10
+Go to -19, -11
+Check ressource
+Go to -19, -10
+Go to -18, -9
+Check ressource
+Go to -17, -9
+Check ressource
+Go to -17, -11
+Check ressource
+Go to -17, -9
+Check ressource
+Go to -16, -9
+Check ressource
+Go to -15, -9
+Check ressource
+Go to -16, -9
+Check ressource
+Go to -16, -8
+Check ressource
+Go to -17, -7
+Check ressource
+Go to -15, -7
+Check ressource
+Go to -14, -7
+Check ressource
+Go to -14, -9
+Go to -12, -9
+Check ressource
+Go to -12, -10
+Go to -15, -10
+Check ressource
+Go to -16, -10
 Check ressource
 fin Action
 
 Zaap
-Plaine des Porkass
-Massif de Cania
+Village des Eleveurs
 Bonta Centre-ville
 fin Zaap
 
@@ -62,13 +115,14 @@ map -17, -11
 ressource position, 981, 373, couleur, 127, 101, 71
 ressource position, 763, 124, couleur, 139, 110, 79
 map -14, -7
-ressource position, 863, 362, couleur, 191, 200, 53
+ressource position, 857, 342, couleur, 203, 218, 53
 ressource position, 644, 121, couleur, 139, 110, 79
 map -16, -10
 ressource position, 364, 120, couleur, 142, 113, 81
 map -12, -9
 ressource position, 358, 193, couleur, 191, 200, 53
 map -12, 1
+ressource position, 478, 358, couleur, 132, 143, 40
 ressource position, 756, 337, couleur, 124, 153, 13
 map -13, -1
 ressource position, 391, 379, couleur, 124, 153, 13
@@ -77,9 +131,10 @@ ressource position, 507, 75, couleur, 143, 167, 20
 map -19, -2
 ressource position, 591, 314, couleur, 143, 167, 20
 map -19, -9
+ressource position, 397, 170, couleur, 132, 125, 0
 ressource position, 899, 246, couleur, 144, 168, 20
 map -17, -2
-ressource position, 677, 92, couleur, 154, 128, 68
+ressource position, 680, 346, couleur, 110, 89, 48
 map -21, -4
 ressource position, 898, 150, couleur, 175, 184, 41
 map -16, -8
@@ -88,8 +143,42 @@ map -15, -9
 ressource position, 369, 331, couleur, 159, 130, 68
 map -18, -9
 ressource position, 593, 214, couleur, 183, 150, 81
-map -14, -7
-ressource position, 857, 342, couleur, 203, 218, 53
+map -12, 0
+ressource position, 678, 288, couleur, 174, 143, 76
+map -18, -2
+ressource position, 425, 480, couleur, 145, 170, 21
+map -20, -2
+ressource position, 901, 299, couleur, 146, 170, 21
+ressource position, 535, 451, couleur, 144, 168, 22
+map -19, -6
+ressource position, 787, 166, couleur, 151, 27, 63
+map -19, -7
+ressource position, 705, 228, couleur, 143, 166, 20
+map -17, -9
+ressource position, 764, 257, couleur, 147, 167, 21
+map -16, -9
+ressource position, 872, 115, couleur, 144, 169, 22
+map -15, -7
+ressource position, 352, 202, couleur, 198, 212, 51
+map -12, 2
+ressource position, 731, 465, couleur, 142, 168, 21
+map -13, 0
+ressource position, 563, 188, couleur, 143, 167, 20
+map -16, -2
+ressource position, 592, 366, couleur, 144, 168, 22
+map -21, -1
+ressource position, 477, 510, couleur, 142, 167, 18
+ressource position, 647, 310, couleur, 134, 162, 18
+map -21, -3
+ressource position, 335, 137, couleur, 119, 128, 38
+map -15, -2
+ressource position, 674, 494, couleur, 142, 166, 20
+map -22, -2
+ressource position, 395, 347, couleur, 163, 169, 38
+map -13, -2
+ressource position, 843, 212, couleur, 127, 156, 14
+map -15, -9
+ressource position, 786, 372, couleur, 174, 187, 45
 fin Ressource
 
 final

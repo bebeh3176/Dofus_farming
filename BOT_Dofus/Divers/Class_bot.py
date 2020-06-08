@@ -121,7 +121,7 @@ class BotScript:
 
 class Optionbot:
     def __init__(self):
-        self.pm = 3
+        self.pm = 4
         self.po = 11
         self.motDePasse = 'darkside94'
         # self.EmplacementViderPod = 'Banque'
@@ -129,3 +129,5 @@ class Optionbot:
         self.proprietairemaison = True
         self.codemaison = '8412251'
         self.codecoffre = '8632125'
+        self.poisson = 'truite'
+        self.nourrir_dragodinde = True

@@ -1,0 +1,5 @@
+/home/benjamin/Desktop/Farming_sim/BOT_Dofus/Scripts/Bucheron/Orme_alentour_bonta.txt
+/home/benjamin/Desktop/Farming_sim/BOT_Dofus/Scripts/Bucheron/Orme_Foret_amakna.txt
+/home/benjamin/Desktop/Farming_sim/BOT_Dofus/Scripts/Bucheron/Orme_massif_de_cania.txt
+/home/benjamin/Desktop/Farming_sim/BOT_Dofus/Scripts/Bucheron/Orme_montagne_koalak.txt
+final

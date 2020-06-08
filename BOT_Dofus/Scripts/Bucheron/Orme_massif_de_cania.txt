@@ -75,6 +75,8 @@ ressource position, 815, 326, couleur, 114, 122, 31
 map -8, -19
 ressource position, 532, 295, couleur, 123, 147, 53
 ressource position, 864, 220, couleur, 146, 186, 11
+map -10, -21
+ressource position, 758, 277, couleur, 159, 175, 32
 map -14, -29
 ressource position, 759, 275, couleur, 136, 143, 44
 map -22, -26
